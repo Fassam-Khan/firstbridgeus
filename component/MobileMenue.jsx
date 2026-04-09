@@ -13,29 +13,36 @@ import {
 } from "@/components/ui/drawer"
 import { MenuSquare } from "lucide-react"
 import { Menu } from "lucide-react"
+import Link from "next/link"
 
 export function MobileMenue() {
   return (
     <Drawer direction="right">
       <DrawerTrigger asChild className="">
-        <Button variant="" className='flex justify-end text-2xl'><Menu/></Button>
+        <Button variant=""><Menu className="text-white text-4xl"/></Button>
       </DrawerTrigger>
-      <DrawerContent className='bg-[var(--secondary-color)]'>
-        <DrawerHeader>
-            <DrawerTitle>
-        <DrawerClose asChild>
-            <Button variant=""><X className="text-white"/></Button>
+      <DrawerTitle></DrawerTitle>
+      <DrawerContent className='  mt-[10px] border-l-4 border-[var(--primary-color)] bg-[var(--secondary-color)]'>
+     
+          <DrawerClose className="!mt-6 flex justify-end !px-8" >
+            <X className="text-white "/>
+
           </DrawerClose>
-          </DrawerTitle>
-          
-        </DrawerHeader>
-        <div className="no-scrollbar overflow-y-auto px-4">
+       
+        <ul className="text-2xl !p-16  text-white focus:text-[var(--primary-color)] flex flex-col gap-10">
+          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
+        </ul>
+        
+    
       
-        </div>
-        <DrawerFooter>
        
          
-        </DrawerFooter>
+        
       </DrawerContent>
     </Drawer>
   )
