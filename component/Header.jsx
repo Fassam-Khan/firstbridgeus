@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
-
+import { MobileMenue } from './MobileMenue'
 const Header = () => {
     return (
 
@@ -28,6 +28,10 @@ const Header = () => {
                 </div>
 
                 {/* Mobile Head  */}
+                <div className=''>
+                    <MobileMenue/>
+
+                </div>
 
 
             
