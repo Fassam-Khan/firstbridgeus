@@ -5,7 +5,7 @@ import { MobileMenue } from './MobileMenue'
 const Header = () => {
     return (
 
-        <header className='bg-[var(--secondary-color)] '>
+        <header className='bg-[var(--secondary-color)] border-b-3 border-[var(--primary-color)]'>
             <div className="wrapper flex justify-between items-center h-[70px] ">
 
                 {/* Left Head  */}
@@ -28,7 +28,7 @@ const Header = () => {
                 </div>
 
                 {/* Mobile Head  */}
-                <div className=''>
+                <div className='md:hidden'>
                     <MobileMenue/>
 
                 </div>
