@@ -9,7 +9,7 @@ import {
 import Image from 'next/image'
 const Hero = () => {
   return (
-    <div className='w-[100%]  overflow-hidden p-3  '>
+    <div className='w-[100%]  overflow-hidden p-3  border-b-3 border-[var(--primary-color)]'>
       <Carousel className="w-full relative ">
      
         <CarouselContent>
