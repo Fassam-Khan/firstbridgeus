@@ -71,7 +71,7 @@ const Footer = () => {
                     <div>
                         <p>© 2026 First Bridge Dispatch Services. All rights reserved.</p>
                     </div>
-                    <div className='flex gap-2 !mt-3 text-[12px] underline '>
+                    <div className='flex gap-2 !mt-3 text-[12px] md:text-sm underline '>
                         <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Privacy</Link>
                         <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Terms</Link>
                         <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Disclaimer</Link>
