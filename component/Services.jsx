@@ -2,12 +2,12 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <div className='!p-10 bg-[#f7f9fb]'>
+        <div className='md:!p-10 bg-[#f7f9fb]'>
             <div className="wrapper">
                 {/* Heading  */}
                 <div className='text-center' id='services'>
                     <div className='flex flex-col justify-center items-center gap-4'>
-                        <h1 className='text-5xl font-extrabold '>OUR SERVICES</h1>
+                        <h1 className='md:text-5xl text-2xl font-extrabold '>OUR SERVICES</h1>
                         <div className="line h-1.5 w-16 bg-[var(--primary-color)]">j</div>
 
                     </div>
@@ -19,7 +19,7 @@ const Services = () => {
 
                 {/* Services Card  */}
 
-                <div className='grid md:grid-cols-4 grid-cols-1 gap-4'>
+                <div className='md:grid md:grid-cols-4 flex flex-wrap flex-col items-center justify-between gap-4'>
                     {/* Service Card  */}
 
                     {/* <!-- From Uiverse.io by dylanharriscameron -->  */}
