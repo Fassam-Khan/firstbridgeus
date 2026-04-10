@@ -4,9 +4,9 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className='bg-[var(--secondary-color)]  w-full'>
-            <div className="wrapper">
+            <div className="wrapper  ">
                 {/* Top footer  */}
-                <div className='text-white flex justify-between flex-wrap gap-3'>
+                <div className='text-white flex justify-between flex-wrap gap-3 border-b border-gray-700 !pb-12'>
                     <div className='  flex-col gap-3 hidden md:flex'>
                         <h4 className='font-[Orbitron] text-xl text-[#ffd23f] font-semibold'>First Bridge Dispatch</h4>
                         <div className='w-55'>
@@ -67,7 +67,17 @@ const Footer = () => {
 
                 </div>
                 {/* Botom Footer  */}
-                <div></div>
+                <div className='flex flex-col items-center text-gray-300 justify-center !p-4 text-center'>
+                    <div>
+                        <p>© 2026 First Bridge Dispatch Services. All rights reserved.</p>
+                    </div>
+                    <div className='flex gap-2 !mt-3 text-[12px] underline '>
+                        <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Privacy</Link>
+                        <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Terms</Link>
+                        <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Disclaimer</Link>
+                        <Link href={'/'} className='!px-1 h-4 '>SMS Policy</Link>
+                    </div>
+                </div>
             </div>
         </footer>
     )
