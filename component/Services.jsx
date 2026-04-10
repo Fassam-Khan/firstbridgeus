@@ -19,7 +19,7 @@ const Services = () => {
 
                 {/* Services Card  */}
 
-                <div className='grid md:grid-cols-4 grid-cols-2 gap-4'>
+                <div className='grid md:grid-cols-4 grid-cols-1 gap-4'>
                     {/* Service Card  */}
 
                     {/* <!-- From Uiverse.io by dylanharriscameron -->  */}
