@@ -9,13 +9,13 @@ import {
 import Image from 'next/image'
 const Hero = () => {
   return (
-    <div className='w-[100%]  overflow-hidden p-3  border-b-3 border-[var(--primary-color)]'>
-      <Carousel className="w-full relative  h-screen">
+    <div className='w-[100%]  overflow-hidden p-3  border-b-3 border-[var(--primary-color)] '>
+      <Carousel className="w-full relative ">
      
         <CarouselContent>
          
           
-          <CarouselItem className="  w-full bg-[url('/hero1.jpeg')] p-3 bg-no-repeat bg-cover bg-center    "  >
+          <CarouselItem className="  w-full bg-[url('/hero1.jpeg')] p-3 bg-no-repeat bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center  !p-8 bg-[#00000067]'>
               <h1 className='md:text-5xl text-3xl  font-[Orbitron] text-white font-bold'>YOUR ROUTE TO SUCCESS</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>Premium Truck Dispatch Services</p>
@@ -31,7 +31,7 @@ const Hero = () => {
 
           </CarouselItem>
            
-          <CarouselItem className="w-full bg-[url('/hero2.jpeg')] p-3 bg-no-repeat  bg-cover bg-center   h-screen "  >
+          <CarouselItem className="w-full bg-[url('/hero2.jpeg')] p-3 bg-no-repeat  bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center  !p-8 bg-[#00000067]'>
               <h1 className='md:text-5xl text-3xl  font-[Orbitron] text-white font-bold'>Find High-Paying Loads 24/7</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>Expert dispatchers working arround the clock</p>
@@ -47,7 +47,7 @@ const Hero = () => {
 
           </CarouselItem>
 
-          <CarouselItem className="w-full bg-[url('/hero3.jpeg')] p-3 bg-no-repeat  bg-cover bg-center  h-screen  "  >
+          <CarouselItem className="w-full bg-[url('/hero3.jpeg')] p-3 bg-no-repeat  bg-cover bg-center   h-[400px] "  >
             <div className='border flex flex-col gap-4 h-full justify-center  !p-8 bg-[#00000067]'>
               <h1 className='md:text-5xl text-3xl  font-[Orbitron] text-white font-bold'>Maximize Your Revenue</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>Keep your truck loaded and profitable</p>
