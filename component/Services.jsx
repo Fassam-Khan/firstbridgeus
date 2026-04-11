@@ -8,7 +8,7 @@ const Services = () => {
                 <div className='text-center' id='services'>
                     <div className='flex flex-col justify-center items-center gap-4'>
                         <h1 className='md:text-5xl text-2xl font-extrabold '>OUR SERVICES</h1>
-                        <div className="line h-1.5 w-16 bg-[var(--primary-color)]">j</div>
+                        <div className="line h-1.5 w-16 bg-[var(--primary-color)]"></div>
 
                     </div>
                     <div className='!mt-2 text-lg'>
@@ -19,7 +19,7 @@ const Services = () => {
 
                 {/* Services Card  */}
 
-                <div className='md:grid md:grid-cols-4 flex flex-wrap flex-col items-center justify-between gap-4'>
+                <div className='!mt-6 md:grid md:grid-cols-4 flex flex-wrap flex-col items-center justify-between gap-4'>
                     {/* Service Card  */}
 
                     {/* <!-- From Uiverse.io by dylanharriscameron -->  */}
