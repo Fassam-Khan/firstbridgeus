@@ -86,10 +86,10 @@ const Hero = () => {
 
         </CarouselContent>
         {/* Left Arrow */}
-        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 text-white font-extrabold " />
+        <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 text-white font-extrabold " />
 
         {/* Right Arrow */}
-        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 text-white " />
+        <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 text-white " />
       </Carousel>
     </div>
   )
