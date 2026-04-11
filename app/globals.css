@@ -43,8 +43,8 @@ a{
 /* From Uiverse.io by dylanharriscameron */ 
 .card {
   position: relative;
-  width: 200px;
-  height: 290px;
+  width: 160px;
+  height: 320px;
   border-radius: 14px;
   z-index: 1111;
   overflow: hidden;
@@ -61,8 +61,8 @@ a{
   position: absolute;
   top: 5px;
   left: 5px;
-  /* width: 190px; */
-  height: 280px;
+  width: 150px;
+  height: auto;
   z-index: 2;
   background: rgba(255, 255, 255, .95);
   backdrop-filter: blur(24px);
@@ -76,7 +76,7 @@ a{
   z-index: 1;
   top: 50%;
   left: 50%;
-  /* width: 160px; */
+  width: 160px;
   height: 160px;
   border-radius: 50%;
   background-color: #ff0000;
@@ -108,11 +108,15 @@ a{
 }
 
 @media (min-width: 769px) {
-.blob{
+  .card{
+    width:290px;
+    height:300px
+  }
+.bg{
     width: 280px;
+    height:300px
+
 
 }
-.card{
-  width:290px
-}
+
 }
