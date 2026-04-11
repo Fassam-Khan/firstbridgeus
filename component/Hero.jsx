@@ -36,7 +36,7 @@ const Hero = () => {
           </CarouselItem>
           <CarouselItem className="pl-4  w-full bg-[url('/hero2.jpeg')] p-3 bg-no-repeat bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center md:items-start   bg-[#00000067] md:!pl-16 items-center '>
-              <h1 className='md:text-5xl text-[20px]  font-[Orbitron] text-white font-bold'>FIND HIGH-PAYING LOADS 24/7</h1>
+              <h1 className='md:text-5xl text-[18px]  font-[Orbitron] text-white font-bold'>FIND HIGH-PAYING LOADS 24/7</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>Expert dispatcher working arround the clock</p>
               <button className="bg-[var(--primary-color)] text-white px-8 !py-2 skew-x-[20deg] md:w-[250px] w-[180px]">
                 <span className="block skew-x-[-20deg] font-bold">
@@ -66,7 +66,7 @@ const Hero = () => {
           </CarouselItem> 
           <CarouselItem className="pl-4  w-full bg-[url('/hero5.jpeg')] p-3 bg-no-repeat bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center md:items-start   bg-[#00000067] md:!pl-16 items-center '>
-              <h1 className='md:text-5xl text-[18px]  font-[Orbitron] text-white font-bold'>GROW YOUR TRUCKING BUSSINESS</h1>
+              <h1 className='md:text-5xl text-[16px]  font-[Orbitron] text-white font-bold'>GROW YOUR TRUCKING BUSSINESS</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>From one truck to a fleet</p>
               <button className="bg-[var(--primary-color)] text-white px-8 !py-2 skew-x-[20deg] md:w-[250px] w-[180px]">
                 <span className="block skew-x-[-20deg] font-bold">
