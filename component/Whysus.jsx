@@ -17,7 +17,7 @@ const Whysus = () => {
 
                 </div>
 
-                <div className='grid md:grid-cols-4  grid-cols-2 gap-6 !mt-6'>
+                <div className='grid md:grid-cols-4  grid-cols-2 md:gap-6 gap-3 !mt-6'>
                     {/* Card  */}
                     <div className="why-card flex flex-col flex-wrap bg-[#161a32] border border-[var(--primary-color)] gap-3 !p-4 ">
                         <h4 className='text-[#ffd23f] text-bold font-[Orbitron] md:text-2xl text-lg'>
