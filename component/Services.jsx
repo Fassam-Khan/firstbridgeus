@@ -19,7 +19,7 @@ const Services = () => {
 
                 {/* Services Card  */}
 
-                <div className='!mt-6 md:grid md:grid-cols-4 flex flex-wrap flex-col items-center justify-between gap-4'>
+                <div className='!mt-6 md:grid md:grid-cols-3 justify-items-center flex flex-wrap flex-col items-center justify-between gap-4'>
                     {/* Service Card  */}
 
                     {/* <!-- From Uiverse.io by dylanharriscameron -->  */}
@@ -100,11 +100,12 @@ const Services = () => {
                       {/* box  */}
                       <div className="card  hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
-                            <p className='text-5xl'>📞</p>
-                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Broker Relations</h4>
+                            <p className='text-5xl'>💰</p>
+                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Billing & Invoicing</h4>
                             <div>
                                 <p>
-                                Professional communication with brokers and shippers. We handle negotiations, confirmations, and follow-ups to ensure smooth operations.
+                                Accurate invoicing and fast payment tracking. We ensure you get paid on time, every time, with complete financial transparency.
+
 
 
 
@@ -120,11 +121,12 @@ const Services = () => {
                       {/* box  */}
                       <div className="card  hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
-                            <p className='text-5xl'>📞</p>
-                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Broker Relations</h4>
+                            <p className='text-5xl'>🎯</p>
+                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Dedicated Support</h4>
                             <div>
                                 <p>
-                                Professional communication with brokers and shippers. We handle negotiations, confirmations, and follow-ups to ensure smooth operations.
+                                Your personal dispatcher available 24/7. Real-time updates, problem solving, and constant support throughout your journey.
+
 
 
 
@@ -140,11 +142,31 @@ const Services = () => {
                       {/* box  */}
                       <div className="card  hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
-                            <p className='text-5xl'>📞</p>
-                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Broker Relations</h4>
+                            <p className='text-5xl'>👥</p>
+                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>CDL Driver Recruitment</h4>
                             <div>
                                 <p>
-                                Professional communication with brokers and shippers. We handle negotiations, confirmations, and follow-ups to ensure smooth operations.
+                                Need qualified drivers? We help you find and recruit experienced CDL drivers to expand your fleet and grow your business.
+
+
+                                </p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div className="blob"></div>
+                    </div> 
+                      {/* box  */}
+                      <div className="card  hover:scale-105 transition-all">
+                        <div className="bg !p-4 flex flex-col gap-3 ">
+                            <p className='text-5xl'>🏦</p>
+                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Factoring Setup</h4>
+                            <div>
+                                <p>
+                                Complete factoring service setup to improve your cash flow. Get paid faster with our trusted factoring company partnerships.
+
 
 
 
@@ -160,11 +182,13 @@ const Services = () => {
                       {/* box  */}
                       <div className="card  hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
-                            <p className='text-5xl'>📞</p>
-                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Broker Relations</h4>
+                            <p className='text-5xl'>🛡️</p>
+                            <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Insurance Setup</h4>
                             <div>
                                 <p>
-                                Professional communication with brokers and shippers. We handle negotiations, confirmations, and follow-ups to ensure smooth operations.
+                                Full assistance with commercial truck insurance requirements. We connect you with competitive carriers and ensure proper coverage.
+
+
 
 
 
