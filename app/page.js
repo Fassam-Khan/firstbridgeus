@@ -5,6 +5,7 @@ import Hero from "@/component/Hero";
 import Footer from "@/component/Footer";
 import Iconsbox from "@/component/Iconsbox";
 import Services from "@/component/Services";
+import Whysus from "@/component/Whysus";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
    <Hero />
    <Iconsbox/>
    <Services/>
+   <Whysus/>
    <Footer/>
   
   
