@@ -17,13 +17,13 @@ const Services = () => {
 
                 </div>
 
-                {/* Services Card  */}
+                {/* Services  card   */}
 
-                <div className='!mt-6 md:grid md:grid-cols-3 justify-items-center flex flex-wrap flex-col items-center justify-between gap-4'>
-                    {/* Service Card  */}
+                <div className='!mt-6 grid md:grid-cols-3  md:justify-items-center grid-cols-2  gap-4'>
+                    {/* Service  card   */}
 
                     {/* <!-- From Uiverse.io by dylanharriscameron -->  */}
-                    <div className="card  hover:scale-105 transition-all">
+                    <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>🚛</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Load Finding</h4>
@@ -40,7 +40,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div>
                     {/* Box  */}
-                    <div className="card  hover:scale-105 transition-all">
+                    <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>📊</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Route Planning</h4>
@@ -59,7 +59,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div>  
                     {/* Box  */}
-                    <div className="card  hover:scale-105 transition-all">
+                    <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>💼</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Route Planning</h4>
@@ -78,7 +78,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div>  
                     {/* box  */}
-                    <div className="card  hover:scale-105 transition-all">
+                    <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>📞</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Broker Relations</h4>
@@ -98,7 +98,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div> 
                       {/* box  */}
-                      <div className="card  hover:scale-105 transition-all">
+                      <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>💰</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Billing & Invoicing</h4>
@@ -119,7 +119,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div> 
                       {/* box  */}
-                      <div className="card  hover:scale-105 transition-all">
+                      <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>🎯</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Dedicated Support</h4>
@@ -140,7 +140,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div> 
                       {/* box  */}
-                      <div className="card  hover:scale-105 transition-all">
+                      <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>👥</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>CDL Driver Recruitment</h4>
@@ -159,7 +159,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div> 
                       {/* box  */}
-                      <div className="card  hover:scale-105 transition-all">
+                      <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>🏦</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Factoring Setup</h4>
@@ -180,7 +180,7 @@ const Services = () => {
                         <div className="blob"></div>
                     </div> 
                       {/* box  */}
-                      <div className="card  hover:scale-105 transition-all">
+                      <div className=" card   hover:scale-105 transition-all">
                         <div className="bg !p-4 flex flex-col gap-3 ">
                             <p className='text-5xl'>🛡️</p>
                             <h4 className='font-[Orbitron] text-2xl font-bold text-[#004e89]'>Insurance Setup</h4>
