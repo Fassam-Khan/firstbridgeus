@@ -2,7 +2,7 @@ import React from 'react'
 
 const Whysus = () => {
     return (
-        <div className='bg-[var(--secondary-color)] p-4 !py-6'>
+        <div className='bg-[var(--secondary-color)] p-4 !py-6' id='why-us'>
             <div className="wrapper">
                 {/* Heading  */}
                 <div className='text-center' id='whyus'>

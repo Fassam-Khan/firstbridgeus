@@ -31,11 +31,11 @@ export function MobileMenue() {
        
         <ul className="text-2xl !p-16  text-white focus:text-[var(--primary-color)] flex flex-col gap-10">
           <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
-          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
-          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
-          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
-          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
-          <Link href={'/'}><li className="border-b border-gray-500">HOME</li></Link>
+          <Link href={'/#services'}><li className="border-b border-gray-500">SERVICES</li></Link>
+          <Link href={'/#whyus'}><li className="border-b border-gray-500">WHY US </li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">FREE TOOLS</li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">RESOURCES</li></Link>
+          <Link href={'/'}><li className="border-b border-gray-500">CONTACT</li></Link>
         </ul>
         
     

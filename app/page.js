@@ -7,6 +7,7 @@ import Iconsbox from "@/component/Iconsbox";
 import Services from "@/component/Services";
 import Whysus from "@/component/Whysus";
 import Faq from "@/component/Faq";
+import How from "@/component/How";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
    <Hero />
    <Iconsbox/>
    <Services/>
+   <How/>
    <Whysus/>
    <Faq/>
    <Footer/>

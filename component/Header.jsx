@@ -18,7 +18,7 @@ const Header = () => {
                     <ul className='flex text-white  gap-10 text-lg font-semibold '>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>HOME</li></Link>
                         <Link href={'#services'}><li className='hover:text-[var(--primary-color)] transition-all'>SERVICES</li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>WHY US</li></Link>
+                        <Link href={'#whyus'}><li className='hover:text-[var(--primary-color)] transition-all'>WHY US</li></Link>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>FREE TOOLS</li></Link>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>RESOURCES</li></Link>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>CONTACT</li></Link>
