@@ -19,7 +19,7 @@ const How = () => {
                 {/* Card Cantainer  */}
                 <div className='grid md:grid-cols-4 justify-items-center !mt-6 grid-cols-2 gap-3'>
                     {/* card  */}
-                    <div className='bg-white shadow-2xl rounded-xl md:h-[300px] flex flex-col gap-4   md:w-[250px] text-center items-center justify-center !p-4'>
+                    <div className='bg-white shadow-2xl rounded-xl hover:scale-105 transition-transform md:h-[300px] flex flex-col gap-4   md:w-[250px] text-center items-center justify-center !p-4'>
                         <div className='w-15 h-15 bg-[#00457d] font-[Orbitron]  rounded-full text-4xl text-white font-bold flex justify-center items-center'>
                             1
                         </div>
