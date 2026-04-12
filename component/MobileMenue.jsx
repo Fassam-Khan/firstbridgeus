@@ -33,7 +33,7 @@ export function MobileMenue() {
        
         <ul className="text-2xl !p-16  text-white focus:text-[var(--primary-color)] flex flex-col gap-10">
           <Link href={'/'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">HOME</li></Link>
-          <Link href={'/#services'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">SERVICES</li></Link>
+          <Link href={'/#services'} scroll={true}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">SERVICES</li></Link>
           <Link href={'/#whyus'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">WHY US </li></Link>
           <Link href={'/'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">FREE TOOLS</li></Link>
           <Link href={'/'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">RESOURCES</li></Link>
