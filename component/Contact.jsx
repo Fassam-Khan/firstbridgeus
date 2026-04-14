@@ -31,7 +31,7 @@ const Contact = () => {
 
                 {/* Right Div  */}
                 <div>
-                    <form onSubmit={submitHandler} className='bg-white md:w-[450px]  shadow-2xl text-[var(--secondary-color)] rounded !p-6'>
+                    <form onSubmit={submitHandler} className='bg-white md:w-[450px] w-[100%] shadow-2xl text-[var(--secondary-color)] rounded !p-6'>
                         <div className='flex gap-6'>
                             <div className='flex flex-col gap-4'>
                                 <label htmlFor="firstname" className=' font-semibold text-lg'>FIRST NAME*</label>
