@@ -20,9 +20,9 @@ const Footer = () => {
                         <h4 className='font-[Orbitron] text-xl text-[#ffd23f] font-semibold'>Quick Links</h4>
                         <ul className='!mt-3 flex flex-col gap-2'>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Home</li></Link>
-                        <Link href={'/#services'}><li className='hover:text-[var(--primary-color)]'>Services</li></Link>
-                        <Link href={'/#whyus'}><li className='hover:text-[var(--primary-color)]'>Why Choose Us</li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Contact</li></Link>
+                        <a href={'/#services'}><li className='hover:text-[var(--primary-color)]'>Services</li></a>
+                        <a href={'/#whyus'}><li className='hover:text-[var(--primary-color)]'>Why Choose Us</li></a>
+                        <a href={'/#contact'}><li className='hover:text-[var(--primary-color)]'>Contact</li></a>
                         </ul>
                     </div>
                     {/* Services  */}

@@ -112,7 +112,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='relative bg-[var(--primary-color)] text-white md:!p-6'>
+        <div className='relative bg-[var(--primary-color)] text-white md:!p-6' id='contact'>
             <div className="wrapper flex justify-between items-center flex-wrap">
                 {/* Left Div  */}
                 <div className='flex flex-col gap-4 '>
@@ -124,7 +124,7 @@ const Contact = () => {
                     </div>
                     <div className='flex flex-col gap-2'>
                         <div>
-                            +92 3142351286
+                            
                         </div>
                         <div>
                             <a href="mailto:info@firstbridgedispatch.com">info@firstbridgedispatch.com</a>
