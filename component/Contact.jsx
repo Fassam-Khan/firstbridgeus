@@ -6,6 +6,11 @@ import { useState } from 'react'
 const Contact = () => {
     const [data, setData] = useState("")
 
+    const changeHandle = (e)=>{
+        console.log(e)
+
+    }
+
     const submitHandler = (e)=>{
         e.preventDefault()
 
@@ -31,16 +36,16 @@ const Contact = () => {
 
                 {/* Right Div  */}
                 <div>
-                    <form onSubmit={submitHandler} className='bg-white md:w-[450px] w-[100%] shadow-2xl text-[var(--secondary-color)] rounded !p-6'>
-                        <div className='flex gap-6'>
-                            <div className='flex flex-col gap-4'>
+                    <form onSubmit={submitHandler} className='bg-white md:w-[450px] w-[100%] shadow-2xl text-[var(--secondary-color)] rounded !p-6 flex flex-col gap-4 flex-wrap'>
+                        <div className='flex justify-between gap-4 flex-wrap'>
+                            <div className='flex flex-col gap-4 md:w-auto w-full'>
                                 <label htmlFor="firstname" className=' font-semibold text-lg'>FIRST NAME*</label>
-                                <div className='group'>
-                                    <input type="text" className='border-b outline-none focus:border-[var(--primary-color)] transition-all' />
+                                <div className='group w-full'>
+                                    <input type="text" value="firstName" onChange={changeHandle} className='border-b outline-none focus:border-[var(--primary-color)] w-full transition-all' />
                                     <p className=' text-red-400 text-sm !mt-1 font-semibold'>Please complete this required field</p>
                                 </div>
                             </div>
-                            <div className='flex flex-col gap-4'>
+                            <div className='flex flex-col gap-4 md:w-auto w-full'>
                                 <label htmlFor="lastname" className=' font-semibold text-lg'>LAST NAME*</label>
                                 <input type="text" className='border-b outline-none' />
                             </div>
