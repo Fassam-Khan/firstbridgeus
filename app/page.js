@@ -9,6 +9,7 @@ import Whysus from "@/component/Whysus";
 import Faq from "@/component/Faq";
 import How from "@/component/How";
 import Contact from "@/component/Contact";
+import Weekly from "@/component/Weekly";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
    <Iconsbox/>
    <Services/>
    <How/>
+   <Weekly/>
    <Whysus/>
    <Faq/>
    <Contact/>
