@@ -3,6 +3,8 @@ import React from 'react'
 import Logo from './Logo'
 import { useState } from 'react'
 import { db } from '@/lib/firebase'
+import { Mail } from 'lucide-react'
+import Link from 'next/link'
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
 const Contact = () => {
@@ -12,7 +14,9 @@ const Contact = () => {
         email: '',
         phone: '',
         mcNumber: '',
-        message: ''
+        message: '',
+        isSMS: false,
+        isSubscribe : false
     })
 
     const [errors, setErrors] = useState({})
@@ -41,6 +45,9 @@ const Contact = () => {
         }
         if (!formData.mcNumber.trim()) {
             newErrors.mcNumber = 'MC number is required'
+        }
+        if (!formData.isSMS) {
+            newErrors.isSMS = 'Please accept SMS policy to continue.'
         }
 
         setErrors(newErrors)
@@ -84,12 +91,14 @@ const Contact = () => {
                 phone: formData.phone,
                 mcNumber: formData.mcNumber,
                 message: formData.message,
+                isSMS: formData.isSMS,
+                isSubscribe: formData.isSubscribe,
                 submittedAt: serverTimestamp()
             })
 
             // Success message
             setSubmitMessage('✓ Form submitted successfully! We will contact you soon.')
-            
+
             // Reset form
             setFormData({
                 firstName: '',
@@ -97,7 +106,9 @@ const Contact = () => {
                 email: '',
                 phone: '',
                 mcNumber: '',
-                message: ''
+                message: '',
+                isSMS:false,
+                isSubscribe:false
             })
             setErrors({})
 
@@ -113,20 +124,24 @@ const Contact = () => {
 
     return (
         <div className='relative bg-[var(--primary-color)] text-white md:!p-6' id='contact'>
-            <div className="wrapper flex justify-between items-center flex-wrap">
+            <div className="wrapper flex justify-between md:justify-around items-center flex-wrap">
                 {/* Left Div  */}
                 <div className='flex flex-col gap-4 '>
                     <div className='flex flex-col gap-2'>
-                        <h4 className='text-4xl font-bold'>Ready to get started?</h4>
+                        <h4 className='text-4xl md:text-6xl font-bold'>Ready to get started?</h4>
                         <div className='md:w-[400px]'>
-                            <p className='text-lg'>Contact us in any convenient way to order services or get detailed information on your question.</p>
+                            <p className='text-lg md:text-xl'>Contact us in any convenient way to order services or get detailed information on your question.</p>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-2 '>
                         <div>
-                            
+
                         </div>
-                        <div>
+                        <div className='flex gap-1 items-center'>
+                            <div className='bg-[var(--secondary-color)] w-7 h-7  rounded-full flex justify-center items-center'>
+                                <Mail className='w-4 h-4' />
+                            </div>
+
                             <a href="mailto:info@firstbridgedispatch.com">info@firstbridgedispatch.com</a>
                         </div>
                     </div>
@@ -135,7 +150,7 @@ const Contact = () => {
                 {/* Right Div  */}
                 <div className=''>
                     <form onSubmit={handleSubmit} className='bg-white md:w-[450px] w-[100%] shadow-2xl text-[var(--secondary-color)] rounded !p-6 flex flex-col gap-4 flex-wrap'>
-                        
+
                         {/* Submit Message */}
                         {submitMessage && (
                             <div className={`p-3 rounded text-sm font-semibold ${submitMessage.includes('✓') ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
@@ -242,6 +257,28 @@ const Contact = () => {
                                 className='!py-2 !px-1 outline focus:outline-[var(--primary-color)] transition-all border rounded'
                                 placeholder="Tell us about your dispatching needs..."
                             />
+                        </div>
+
+                        <div className='  '>
+                            <div className='flex gap-2 '>
+                                <input type="checkbox" checked={formData.isSMS} id="sms" name="sms" value={formData.isSMS} onChange={(e) =>
+                                    setFormData({ ...formData, isSMS: e.target.checked })
+                                } />
+                                <label for="sms" className='text-sm'>By providing your phone number and submitting any form on Firstbridgeus, you agree to receive SMS (text) messages from us. View our <Link className='text-[var(--primary-color)] font-bold' href={'/'}>Privacy Policy</Link> and <Link className='font-bold text-[var(--primary-color)]' href={'/'}>SMS Policy</Link></label>
+                            </div>
+
+                            <div>
+                                {errors.isSMS && (
+                                    <p className='text-red-400 text-sm !mt-1 font-semibold'>{errors.isSMS}</p>
+                                )}
+                            </div>
+                        </div>
+
+                        <div className='flex gap-2   '>
+                            <input type="checkbox" checked={formData.isSubscribe} id="subscribe" name="subscribe" value={formData.isSubscribe} onChange={(e)=>{
+                                setFormData({...formData, isSubscribe:e.target.checked})
+                            }} />
+                            <label for="subscribe" className='text-sm'>I agree to recieve email updates about tracking opportunities and dispatch services from First Bridge Dispatch Services</label>
                         </div>
 
                         <button

@@ -11,7 +11,7 @@ export function Accordionpage() {
       type="single"
       collapsible
       defaultValue="shipping"
-      className=" flex  flex-col gap-6 justify-center items-center"
+      className=" flex  flex-col gap-6 justify-center items-center md:w-[900px]"
     >
       <AccordionItem value="shipping" className='bg-white !px-4 !py-4 rounded-xl  w-full h-auto'>
         <AccordionTrigger className="font-[Orbitron] text-[#004e89] font-bold md:text-2xl text-lg ">What services does First Bridge Dispatch Services provid?</AccordionTrigger>
@@ -43,7 +43,7 @@ export function Accordionpage() {
           Yes, we assist new trucking companies with carrier setup guidance, documentation, and finding their first loads after activating MC authority so you can start earning as quickly as possible.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="truck" className='bg-white !px-4 !py-4 rounded-xl  w-full'>
+      <AccordionItem value="truck" className='bg-white border-b !px-4 !py-4 rounded-xl  w-full'>
         <AccordionTrigger className="font-[Orbitron] text-[#004e89] font-bold md:text-2xl text-lg ">What type of trucks do you work with?</AccordionTrigger>
         <AccordionContent className="text-lg !h-auto">
           We dispatch a variety of equipment including Dry Van, Reefer, Flatbed, Step Deck, Power Only, and Hotshot trucks across all 48 contiguous states.

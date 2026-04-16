@@ -114,7 +114,7 @@ const AdminDashboard = () => {
                         </div>
                         <button
                             onClick={handleLogout}
-                            className='bg-white text-[var(--primary-color)] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors'
+                            className='bg-white text-[var(--primary-color)] px-6 !py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors'
                         >
                             Logout
                         </button>
@@ -159,7 +159,7 @@ const AdminDashboard = () => {
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 placeholder='Search by name, email, or phone...'
-                                className='w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[var(--primary-color)]'
+                                className='w-full px-4 !py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[var(--primary-color)]'
                             />
                         </div>
                         <div>
@@ -167,7 +167,7 @@ const AdminDashboard = () => {
                             <select
                                 value={sortBy}
                                 onChange={(e) => setSortBy(e.target.value)}
-                                className='w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[var(--primary-color)]'
+                                className='w-full px-4 !py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[var(--primary-color)]'
                             >
                                 <option value="recent">Most Recent</option>
                                 <option value="oldest">Oldest First</option>
@@ -200,6 +200,8 @@ const AdminDashboard = () => {
                                         <th className='px-6 py-4 text-left text-sm font-semibold text-gray-700'>Email</th>
                                         <th className='px-6 py-4 text-left text-sm font-semibold text-gray-700'>Phone</th>
                                         <th className='px-6 py-4 text-left text-sm font-semibold text-gray-700'>MC Number</th>
+                                        <th className='px-6 py-4 text-left text-sm font-semibold text-gray-700'>Is Subscribe</th>
+
                                         <th className='px-6 py-4 text-left text-sm font-semibold text-gray-700'>Submitted</th>
                                         <th className='px-6 py-4 text-center text-sm font-semibold text-gray-700'>Actions</th>
                                     </tr>
@@ -213,12 +215,14 @@ const AdminDashboard = () => {
                                             <td className='px-6 py-4 text-gray-700'>{form.email}</td>
                                             <td className='px-6 py-4 text-gray-700'>{form.phone}</td>
                                             <td className='px-6 py-4 text-gray-700 font-mono'>{form.mcNumber}</td>
+                                            <td className='px-6 py-4 text-gray-700 font-mono'>{form.isSubscribe}</td>
+
                                             <td className='px-6 py-4 text-gray-600 text-sm'>{formatDate(form.submittedAt)}</td>
                                             <td className='px-6 py-4 text-center'>
                                                 <div className='flex justify-center gap-3'>
                                                     <button
                                                         onClick={() => setSelectedForm(form)}
-                                                        className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors text-sm font-semibold'
+                                                        className='bg-blue-500 text-white px-4 !py-2 rounded hover:bg-blue-600 transition-colors text-sm font-semibold'
                                                     >
                                                         View
                                                     </button>
@@ -227,7 +231,7 @@ const AdminDashboard = () => {
                                                             setDeleteId(form.id)
                                                             setIsDeleteConfirm(true)
                                                         }}
-                                                        className='bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors text-sm font-semibold'
+                                                        className='bg-red-500 text-white px-4 !py-2 rounded hover:bg-red-600 transition-colors text-sm font-semibold'
                                                     >
                                                         Delete
                                                     </button>
@@ -273,6 +277,7 @@ const AdminDashboard = () => {
                                 <p className='text-sm font-semibold text-gray-600'>Message</p>
                                 <p className='text-gray-900 bg-gray-50 p-3 rounded mt-2'>{selectedForm.message || 'No message'}</p>
                             </div>
+                            
 
                             <div>
                                 <p className='text-sm font-semibold text-gray-600'>Submitted At</p>
@@ -282,7 +287,7 @@ const AdminDashboard = () => {
 
                         <button
                             onClick={() => setSelectedForm(null)}
-                            className='w-full mt-6 bg-[var(--primary-color)] text-white font-semibold py-2 rounded hover:opacity-90 transition-opacity'
+                            className='w-full mt-6 bg-[var(--primary-color)] text-white font-semibold !py-2 rounded hover:opacity-90 transition-opacity'
                         >
                             Close
                         </button>
@@ -303,13 +308,13 @@ const AdminDashboard = () => {
                                     setIsDeleteConfirm(false)
                                     setDeleteId(null)
                                 }}
-                                className='flex-1 bg-gray-300 text-gray-900 font-semibold py-2 rounded hover:bg-gray-400 transition-colors'
+                                className='flex-1 bg-gray-300 text-gray-900 font-semibold !py-2 rounded hover:bg-gray-400 transition-colors'
                             >
                                 Cancel
                             </button>
                             <button
                                 onClick={handleDelete}
-                                className='flex-1 bg-red-600 text-white font-semibold py-2 rounded hover:bg-red-700 transition-colors'
+                                className='flex-1 bg-red-600 text-white font-semibold !py-2 rounded hover:bg-red-700 transition-colors'
                             >
                                 Delete
                             </button>
