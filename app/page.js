@@ -10,6 +10,7 @@ import Faq from "@/component/Faq";
 import How from "@/component/How";
 import Contact from "@/component/Contact";
 import Weekly from "@/component/Weekly";
+import Equipment from "@/component/Equipment";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
    <Services/>
    <How/>
    <Weekly/>
+   <Equipment/>
    <Whysus/>
    <Faq/>
    <Contact/>
