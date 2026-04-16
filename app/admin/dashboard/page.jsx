@@ -215,7 +215,7 @@ const AdminDashboard = () => {
                                             <td className='px-6 py-4 text-gray-700'>{form.email}</td>
                                             <td className='px-6 py-4 text-gray-700'>{form.phone}</td>
                                             <td className='px-6 py-4 text-gray-700 font-mono'>{form.mcNumber}</td>
-                                            <td className='px-6 py-4 text-gray-700 font-mono'>{form.isSubscribe}</td>
+                                            <td className='px-6 py-4 text-gray-700 font-mono'>{form.isSubscribe === true ? "Yes" : "No"}</td>
 
                                             <td className='px-6 py-4 text-gray-600 text-sm'>{formatDate(form.submittedAt)}</td>
                                             <td className='px-6 py-4 text-center'>
@@ -276,6 +276,10 @@ const AdminDashboard = () => {
                             <div>
                                 <p className='text-sm font-semibold text-gray-600'>Message</p>
                                 <p className='text-gray-900 bg-gray-50 p-3 rounded mt-2'>{selectedForm.message || 'No message'}</p>
+                            </div>
+                            <div>
+                                <p className='text-sm font-semibold text-gray-600'>IS Subscribe</p>
+                                <p className='text-gray-900 bg-gray-50 p-3 rounded mt-2'>{selectedForm.isSubscribe === true ? "Yes" : "No"}</p>
                             </div>
                             
 
