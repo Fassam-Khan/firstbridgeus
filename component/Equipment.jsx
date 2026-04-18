@@ -21,20 +21,20 @@ const Equipment = () => {
                 {/* Card Container  */}
                 <div className='grid md:grid-cols-5 grid-cols-2 gap-4 !mt-4'>
                     {/* Card  */}
-                    <div className='md:w-[250px] rounded-xl  border border-gray-300 hover:border-[var(--primary-color)] transition-all hover:scale-105 focus-within:scale-105 flex flex-col gap-4 text-center !p-4'> 
+                    <div className='md:w-[250px] hover:scale-105 rounded-xl  border border-gray-300 hover:border-[var(--primary-color)] transition-all  focus-within:scale-105 flex flex-col gap-4 text-center !p-4'> 
                         <Image src={'/truck1.png'} alt='DryVan' width={250} height={100}/>
                         <p className='text-lg font-bold font-[Orbitron]'>Dry Van</p>
 
                     </div>
                         {/* Card  */}
                         <div className='md:w-[250px] rounded-xl  border border-gray-300 hover:border-[var(--primary-color)] transition-all hover:scale-105 focus-within:scale-105 flex flex-col gap-4 text-center !p-4'> 
-                        <Image src={'/truck2.jfif'} alt='DryVan' width={250} height={100}/>
+                        <Image src={'/truck2.png'} alt='DryVan' width={250} height={100}/>
                         <p className='text-lg font-bold font-[Orbitron]'>Reefer</p>
 
                     </div>
                         {/* Card  */}
                         <div className='md:w-[250px] rounded-xl  border border-gray-300 hover:border-[var(--primary-color)] transition-all hover:scale-105 focus-within:scale-105 flex flex-col gap-4 text-center !p-4'> 
-                        <Image src={'/truck3.jfif'} alt='DryVan' width={250} height={100}/>
+                        <Image src={'/truck3.png'} alt='DryVan' width={250} height={100}/>
                         <p className='text-lg font-bold font-[Orbitron]'>Flatbed</p>
 
                     </div>
@@ -46,13 +46,13 @@ const Equipment = () => {
                     </div>
                         {/* Card  */}
                         <div className='md:w-[250px] rounded-xl  border border-gray-300 hover:border-[var(--primary-color)] transition-all hover:scale-105 focus-within:scale-105 flex flex-col gap-4 text-center !p-4'> 
-                        <Image src={'/truck5.jfif'} alt='DryVan' width={250} height={100}/>
+                        <Image src={'/truck5.png'} alt='DryVan' width={250} height={100}/>
                         <p className='text-lg font-bold font-[Orbitron]'>Power Only</p>
 
                     </div>
                         {/* Card  */}
                         <div className='md:w-[250px] rounded-xl  border border-gray-300 hover:border-[var(--primary-color)] transition-all hover:scale-105 focus-within:scale-105 flex flex-col gap-4 text-center !p-4'> 
-                        <Image src={'/truck6.jfif'} alt='DryVan' width={250} height={100}/>
+                        <Image src={'/truck6.png'} alt='DryVan' width={250} height={100}/>
                         <p className='text-lg font-bold font-[Orbitron]'>Hotshot</p>
 
                     </div>
