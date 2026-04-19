@@ -43,7 +43,7 @@ const Footer = () => {
                     <div className=' flex-col gap-3'>
                         <h4 className='font-[Orbitron] text-xl text-[#ffd23f] font-semibold'>Free Tools </h4>
                         <ul className='!mt-3 flex flex-col gap-2'>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>All Free Calculators</li></Link>
+                        <Link href={'/freetools'}><li className='hover:text-[var(--primary-color)]'>All Free Calculators</li></Link>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Diesel Fuel Prices</li></Link>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Rate Per Mile</li></Link>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Load Profit</li></Link>
@@ -72,10 +72,10 @@ const Footer = () => {
                         <p>© 2026 First Bridge Dispatch Services. All rights reserved.</p>
                     </div>
                     <div className='flex gap-2 !mt-3 text-[12px] md:text-sm underline '>
-                        <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Privacy</Link>
-                        <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Terms</Link>
-                        <Link href={'/'} className='!px-1 h-4 border-r border-gray-600'>Disclaimer</Link>
-                        <Link href={'/'} className='!px-1 h-4 '>SMS Policy</Link>
+                        <Link href={'/privacy-policy'} className='!px-1 h-4 border-r border-gray-600'>Privacy</Link>
+                        <Link href={'/privacy-policy'} className='!px-1 h-4 border-r border-gray-600'>Terms</Link>
+                        <Link href={'/privacy-policy'} className='!px-1 h-4 border-r border-gray-600'>Disclaimer</Link>
+                        <Link href={'/privacy-policy'} className='!px-1 h-4 '>SMS Policy</Link>
                     </div>
                 </div>
             </div>

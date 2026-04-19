@@ -19,7 +19,7 @@ const Header = () => {
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>HOME</li></Link>
                         <a href={'#services'}><li className='hover:text-[var(--primary-color)] transition-all'>SERVICES</li></a>
                         <a href={'#whyus'}><li className='hover:text-[var(--primary-color)] transition-all'>WHY US</li></a>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>FREE TOOLS</li></Link>
+                        <Link href={'/freetools'}><li className='hover:text-[var(--primary-color)] transition-all'>FREE TOOLS</li></Link>
                         <Link href={'/'}><li className='hover:text-[var(--primary-color)] transition-all'>RESOURCES</li></Link>
                         <a href={'/#contact'}><li className='hover:text-[var(--primary-color)] transition-all'>CONTACT</li></a>
 
