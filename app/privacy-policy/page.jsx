@@ -7,7 +7,7 @@ import { ArrowLeft } from 'lucide-react'
 
 const page = () => {
     return (
-        <div className='!p-[10px]'>
+        <div className='!'>
             <Header />
             {/* Title Section  */}
             <div className="title text-center flex-wrap h-[180px] bg-[#003d73] text-white !py-4 flex justify-center items-center flex-col gap-4">
@@ -20,7 +20,7 @@ const page = () => {
             </div>
 
             {/* Main  */}
-            <div className='md:w-[600px] w-full !m-auto flex flex-col gap-10 '>
+            <div className='md:w-[600px] w-full !m-auto flex flex-col gap-10 !p-[10px]'>
 
                 {/* home  */}
 
