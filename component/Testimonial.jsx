@@ -54,11 +54,11 @@ const Testimonial = () => {
                                     <p>⭐⭐⭐⭐⭐</p>
                                 </div>
                                 <div className='text-lg italic'>
-                                    <p>"First Bridge Dispatch helped me increase my weekly revenue by 20% and reduced my empty miles significantly. Best decision I made for my business."</p>
+                                    <p>"Professional, reliable, and always available. They find me consistent high-paying loads and handle all the paperwork. I just focus on driving safely."</p>
                                 </div>
                                 <div className='flex flex-col '>
-                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Mike Johnson</p>
-                                    <p className='text-sm'>Owner Operator, Texas</p>
+                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Sarah Martinez</p>
+                                    <p className='text-sm'>Owner Operator, California</p>
                                 </div>
                             </div></CarouselItem>
                         <CarouselItem className="md:basis-1/3 lg:basis-1/3">
@@ -68,11 +68,11 @@ const Testimonial = () => {
                                     <p>⭐⭐⭐⭐⭐</p>
                                 </div>
                                 <div className='text-lg italic'>
-                                    <p>"First Bridge Dispatch helped me increase my weekly revenue by 20% and reduced my empty miles significantly. Best decision I made for my business."</p>
+                                    <p>"Switched from self-dispatching to First Bridge six months ago. My stress level is down, my revenue is up, and I actually have time off now. Highly recommend!"</p>
                                 </div>
                                 <div className='flex flex-col '>
-                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Mike Johnson</p>
-                                    <p className='text-sm'>Owner Operator, Texas</p>
+                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Robert Chen</p>
+                                    <p className='text-sm'>Owner Operator, Florida</p>
                                 </div>
                             </div></CarouselItem>
                         <CarouselItem className="md:basis-1/3 lg:basis-1/3">
@@ -82,11 +82,11 @@ const Testimonial = () => {
                                     <p>⭐⭐⭐⭐⭐</p>
                                 </div>
                                 <div className='text-lg italic'>
-                                    <p>"First Bridge Dispatch helped me increase my weekly revenue by 20% and reduced my empty miles significantly. Best decision I made for my business."</p>
+                                    <p>"I was skeptical about using a dispatch service but First Bridge proved me wrong from week one. They negotiated rates I never could have gotten on my own and kept my flatbed loaded 6 days a week."</p>
                                 </div>
                                 <div className='flex flex-col '>
-                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Mike Johnson</p>
-                                    <p className='text-sm'>Owner Operator, Texas</p>
+                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Darnell Washington</p>
+                                    <p className='text-sm'>Flatbed Owner Operator, Georgia</p>
                                 </div>
                             </div></CarouselItem>
                         <CarouselItem className="md:basis-1/3 lg:basis-1/3">
@@ -96,11 +96,11 @@ const Testimonial = () => {
                                     <p>⭐⭐⭐⭐⭐</p>
                                 </div>
                                 <div className='text-lg italic'>
-                                    <p>"First Bridge Dispatch helped me increase my weekly revenue by 20% and reduced my empty miles significantly. Best decision I made for my business."</p>
+                                    <p>"As a new carrier with fresh MC authority, I had no idea where to start. First Bridge walked me through the entire setup, found my first load within 48 hours, and have been keeping me moving ever since."</p>
                                 </div>
                                 <div className='flex flex-col '>
-                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Mike Johnson</p>
-                                    <p className='text-sm'>Owner Operator, Texas</p>
+                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Maria Delgado</p>
+                                    <p className='text-sm'>Reefer Owner Operator, Illinois</p>
                                 </div>
                             </div></CarouselItem>
                         <CarouselItem className="md:basis-1/3 lg:basis-1/3">
@@ -110,11 +110,11 @@ const Testimonial = () => {
                                     <p>⭐⭐⭐⭐⭐</p>
                                 </div>
                                 <div className='text-lg italic'>
-                                    <p>"First Bridge Dispatch helped me increase my weekly revenue by 20% and reduced my empty miles significantly. Best decision I made for my business."</p>
+                                    <p>"Been trucking for 12 years and tried three different dispatch services. First Bridge is on a different level. My dedicated dispatcher knows my preferred lanes, pushes for top rates every single time, and responds day or night."</p>
                                 </div>
                                 <div className='flex flex-col '>
-                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Mike Johnson</p>
-                                    <p className='text-sm'>Owner Operator, Texas</p>
+                                    <p className='text-[var(--primary-color)] font-semibold text-lg'>Travis Beaumont</p>
+                                    <p className='text-sm'>Dry Van Owner Operator, Tennessee</p>
                                 </div>
                             </div></CarouselItem>
 
