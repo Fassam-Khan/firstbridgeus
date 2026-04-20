@@ -1,6 +1,13 @@
+"use client"
 import React from 'react'
+import { useState } from 'react'
 
 const ratePerMile = () => {
+  
+
+  const submitHandler = ()=>{
+console.log("hi")
+  }
   return (
     <div className='flex flex-col shadow-2xl gap-4 w-full border-t-3 rounded-2xl bg-white border-[var(--primary-color)]  md:!p-8 !p-2'>
       {/* Heading  */}
@@ -18,7 +25,7 @@ const ratePerMile = () => {
         <div className='md:grid grid-cols-2 gap-4 w-full flex flex-col'>
           <div className='flex flex-col ga-3'>
             <label htmlFor="" className='font-bold'>Total Load Pay [$] *</label>
-            <input type="number" placeholder='3500' className='  border bg-white  !px-2 !py-2 outline-[var(--primary-color)] transition-all border-gray-200' />
+            <input type="number"  placeholder='3500' className='  border bg-white  !px-2 !py-2 outline-[var(--primary-color)] transition-all border-gray-200' />
           </div>
           {/* Right  */}
           <div className='flex flex-col ga-3 '>
@@ -35,7 +42,7 @@ const ratePerMile = () => {
 
       
       <div className='flex gap-4'>
-          <button className='bg-[#004e89] font-semibold !py-3 text-lg !px-2 text-white rounded cursor-pointer w-[400px] '>
+          <button onClick={submitHandler} className='bg-[#004e89] font-semibold !py-3 text-lg !px-2 text-white rounded cursor-pointer w-[400px] '>
             CALCULATE RATE 
 
           </button>
