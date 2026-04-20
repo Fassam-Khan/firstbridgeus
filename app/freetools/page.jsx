@@ -41,11 +41,11 @@ const page = () => {
       {/* Hero Section  */}
       <div className='text-center bg-[#00437b] '>
         <div className="wrapper flex-col gap-4 flex justify-center h-[330px] items-center text-white  ">
-          <h4 className='font-bold md:text-6xl'>
+          <h4 className='font-bold md:text-6xl text-xl'>
             Free Trucking Tools & Calculators
           </h4>
-          <div className='w-[550px]'>
-            <p className='text-lg'>Professional tools built for owner operators. Calculate profits, fuel costs, load rates, and operating expenses instantly — no sign-up required. Make smarter decisions about every load you haul.</p>
+          <div className='md:w-[550px]'>
+            <p className='md:text-lg'>Professional tools built for owner operators. Calculate profits, fuel costs, load rates, and operating expenses instantly — no sign-up required. Make smarter decisions about every load you haul.</p>
           </div>
         </div>
       </div>
@@ -67,17 +67,19 @@ const page = () => {
 
       {/* tools Container  */}
       <div className='bg-[#f7f9fb]'>
-        <div className="wrapper">
+        <div className="wrapper grid md:grid-cols-4 grid-cols-2 gap-4">
           {
             tools.map((e) => {
-              <Link href={`/freetools/${e.slug}`}>
-                <div className='flex flex-col md:w-[300px] !p-4 bg-white'>
-                  <p>💵</p>
+              return  <Link href={`/freetools/${e.slug}`}>
+                  <div className='flex flex-col md:w-[300px] !p-4 bg-white gap-4 border-t-2 border-[var(--primary-color)]'>
+                  <p className='text-2xl'>💵</p>
                   <h4 className='text-[#004e89] font-[Orbitron] font-bold'>{e.name}</h4>
                   <p>Calculate how much you're earning per mile on any load based on pay and total mines. </p>
-                  <button className='bg-[var(--primary-color)] font-bold  text-white w-full !py-2'>USE CALCULATOR</button>
+                  <button className='cursor-pointer bg-[var(--primary-color)] font-bold  text-white w-full !py-2'>USE CALCULATOR</button>
                 </div>
               </Link>
+              
+              
 
 
             })
