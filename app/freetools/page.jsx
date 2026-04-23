@@ -69,8 +69,8 @@ const page = () => {
       <div className='bg-[#f7f9fb]'>
         <div className="wrapper grid md:grid-cols-4 grid-cols-2 gap-4">
           {
-            tools.map((e) => {
-              return  <Link href={`/freetools/${e.slug}`}>
+            tools.map((e,index) => {
+              return  <Link href={`/freetools/${e.slug}` } key={index}>
                   <div className='flex flex-col md:w-[300px] rounded shadow-xl !p-4 bg-white gap-4 border-t-2 border-[var(--primary-color)]'>
                   <p className='text-2xl'>{e.icon}</p>
                   <h4 className='text-[#004e89] font-[Orbitron] font-bold'>{e.name}</h4>
