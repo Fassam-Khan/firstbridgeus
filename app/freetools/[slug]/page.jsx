@@ -66,11 +66,11 @@ const Page = () => {
         {/* Related tools  */}
         <div>
 
-        <div className='border-b border-gray-300  md:!mt-20'>
+        <div className='border-b border-gray-300  md:!mt-20 !mt-10'>
             <h4 className='md:text-2xl  font-bold '>Related Tools</h4>
         </div>
         {/* tools  */}
-        <div className='grid md:grid-cols-4 grid-cols-2 !mt-6'>
+        <div className='grid md:grid-cols-4 grid-cols-2 !mt-6 gap-4'>
           {related.map((e,index)=>{
             return  <Link href={`/freetools/${e.slug}` } key={index}>
             <div className='flex flex-col md:w-[300px] rounded shadow-xl !p-4 bg-white gap-4 border-t-2 border-[var(--primary-color)]'>
