@@ -71,10 +71,10 @@ const page = () => {
           {
             tools.map((e) => {
               return  <Link href={`/freetools/${e.slug}`}>
-                  <div className='flex flex-col md:w-[300px] !p-4 bg-white gap-4 border-t-2 border-[var(--primary-color)]'>
-                  <p className='text-2xl'>💵</p>
+                  <div className='flex flex-col md:w-[300px] rounded shadow-xl !p-4 bg-white gap-4 border-t-2 border-[var(--primary-color)]'>
+                  <p className='text-2xl'>{e.icon}</p>
                   <h4 className='text-[#004e89] font-[Orbitron] font-bold'>{e.name}</h4>
-                  <p>Calculate how much you're earning per mile on any load based on pay and total mines. </p>
+                  <p>{e.description} </p>
                   <button className='cursor-pointer bg-[var(--primary-color)] font-bold  text-white w-full !py-2'>USE CALCULATOR</button>
                 </div>
               </Link>
