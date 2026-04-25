@@ -25,7 +25,7 @@ const Hero = () => {
               <p className='text-white md:text-2xl text-lg font-semibold'>Premium Truck Dispatch Services</p>
               <button className="bg-[var(--primary-color)] text-white px-8 !py-2 skew-x-[20deg] md:w-[250px] w-[180px]">
                 <span className="block skew-x-[-20deg] font-bold">
-                  <a href="">GET STARTED TODAY</a>
+                  <a href="/#contact">GET STARTED TODAY</a>
                 </span>
               </button>
 
@@ -40,7 +40,7 @@ const Hero = () => {
               <p className='text-white md:text-2xl text-lg font-semibold'>Expert dispatcher working arround the clock</p>
               <button className="bg-[var(--primary-color)] text-white px-8 !py-2 skew-x-[20deg] md:w-[250px] w-[180px]">
                 <span className="block skew-x-[-20deg] font-bold">
-                  <a href="#services">VIEW SERVICES</a>
+                  <a href="/#services">VIEW SERVICES</a>
                 </span>
               </button>
 
@@ -55,7 +55,7 @@ const Hero = () => {
               <p className='text-white md:text-2xl text-lg font-semibold'>Keep your truck loaded and profitable</p>
               <button className="bg-[var(--primary-color)] text-white px-8 !py-2 skew-x-[20deg] md:w-[250px] w-[180px]">
                 <span className="block skew-x-[-20deg] font-bold">
-                  <a href="">WHY CHOOSE US</a>
+                  <a href="/#whyus">WHY CHOOSE US</a>
                 </span>
               </button>
 
@@ -70,7 +70,7 @@ const Hero = () => {
               <p className='text-white md:text-2xl text-lg font-semibold'>From one truck to a fleet</p>
               <button className="bg-[var(--primary-color)] text-white px-8 !py-2 skew-x-[20deg] md:w-[250px] w-[180px]">
                 <span className="block skew-x-[-20deg] font-bold">
-                  <a href="">CONTACT US</a>
+                  <a href="/#contact">CONTACT US</a>
                 </span>
               </button>
 
