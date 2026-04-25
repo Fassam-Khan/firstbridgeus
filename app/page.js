@@ -8,10 +8,10 @@ import Services from "@/component/Services";
 import Whysus from "@/component/Whysus";
 import Faq from "@/component/Faq";
 import How from "@/component/How";
-import Contact from "@/component/Contact";
 import Weekly from "@/component/Weekly";
 import Equipment from "@/component/Equipment";
 import Testimonial from "@/component/Testimonial";
+import Contact from "@/component/Contact";
 
 export default function Home() {
   return (
@@ -27,6 +27,7 @@ export default function Home() {
    <Whysus/>
    <Faq/>
    <Contact/>
+  
    <Footer/>
   
   
