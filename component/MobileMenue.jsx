@@ -36,7 +36,7 @@ export function MobileMenue() {
           <a href={'/#services'} scroll={true}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">SERVICES</li></a>
           <a href={'/#whyus'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">WHY US </li></a>
           <Link href={'/freetools'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">FREE TOOLS</li></Link>
-          <Link href={'/'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">RESOURCES</li></Link>
+          <Link href={'/resources'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">RESOURCES</li></Link>
           <a href={'/#contact'}  onClick={() => setOpen(false)}><li className="border-b border-gray-500">CONTACT</li></a>
         </ul>
         
