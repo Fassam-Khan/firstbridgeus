@@ -124,7 +124,7 @@ const Contact = () => {
 
     return (
         <div className='relative bg-[var(--primary-color)] text-white md:!p-6' id='contact'>
-            <div className="wrapper flex justify-between md:justify-around items-center flex-wrap">
+            <div className="wrapper flex justify-between md:justify-around items-center flex-wrap gap-4">
                 {/* Left Div  */}
                 <div className='flex flex-col gap-4 '>
                     <div className='flex flex-col gap-2'>
