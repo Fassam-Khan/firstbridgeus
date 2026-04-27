@@ -23,11 +23,11 @@ const page = () => {
 
             <div>
                 {/* nav links  */}
-                <div className='bg-[#f7f9fb] '>
+                <div className='bg-[#f7f9fb]  md:h-auto h-[60px]'>
                     {/* Mobile Caruser  */}
-                    <div className="md:hidden wrapper">
-                        <Carousel>
-                            <CarouselContent>
+                    <div className="md:hidden wrapper ">
+                        <Carousel className=''>
+                            <CarouselContent className='flex items-center '>
 
                                 <CarouselItem className="basis-[60%]">
                                     {/* Card  */}
@@ -39,128 +39,6 @@ const page = () => {
 
                                         <span className='bg-[var(--primary-color)] !p-2 rounded-full w-5 h-5 flex justify-center items-center text-white'>10</span>
                                         <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
-
-                                        {/* Hover box  */}
-                                        <div className='hidden group-hover:block absolute border-t-3 border-[var(--primary-color)] 
-top-10 w-[480px] bg-[var(--secondary-color)] !p-4 text-white 
-max-h-[400px] overflow-y-auto z-50'>
-                                            {/* Top box  */}
-                                            <div className='flex items-center'>
-                                                <div className='md:w-[350px]'>
-                                                    <p className='font-[Orbitron] text-[12px] text-[#ffd23f]'>10 Owner Operator Guides</p>
-                                                </div>
-
-                                                <div className='h-[1px] bg-gray-600 w-full '></div>
-                                            </div>
-
-                                            {/* List Container  */}
-                                            {/* Row  */}
-
-                                            <div className='flex gap-4 justify-between !px-2 !mt-1  gap-2'>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-
-                                            </div>
-                                            {/* Row  */}
-
-                                            <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-
-                                            </div>
-                                            {/* Row  */}
-
-                                            <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-
-                                            </div>
-                                            {/* Row  */}
-
-                                            <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-
-                                            </div>
-                                            {/* Row  */}
-
-                                            <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                                {/* Card  */}
-                                                <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                                    <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                                    <div className='md:w-[150px]'>
-                                                        <p>How to start a trucking company</p>
-                                                    </div>
-                                                </div>
-                                                </a>
-
-                                            </div>
-
-                                        </div>
                                     </div>
 
 
@@ -229,191 +107,214 @@ max-h-[400px] overflow-y-auto z-50'>
                             </CarouselContent>
                         </Carousel>
                     </div>
-                    <div className="wrapper hidden h-[60px] md:flex  gap-4 justify-center ">
 
-                        {/* Card  */}
-                        <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
-                            <div className='flex gap-2 items-center  '>
-                                <p>📚</p>
-                                <p className='font-bold  text-2xl'>Guides</p>
-                            </div>
+                    {/* Large devices  */}
+                    <div className="wrapper  ">
+                        {/* NavLinks  */}
+                        <div className='hidden h-[40px] md:flex  gap-4 justify-center'>
+                            {/* Card  */}
+                            <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
+                                <div className='flex gap-2 items-center  '>
+                                    <p>📚</p>
+                                    <p className='font-bold  text-2xl'>Guides</p>
+                                </div>
 
-                            <span className='bg-[var(--primary-color)] !p-2 rounded-full w-5 h-5 flex justify-center items-center text-white'>10</span>
-                            <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
+                                <span className='bg-[var(--primary-color)] !p-2 rounded-full w-5 h-5 flex justify-center items-center text-white'>10</span>
+                                <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
-                            {/* Hover box  */}
-                            <div className='hidden group-hover:block absolute border-t-3 border-[var(--primary-color)] 
+                                {/* Hover box  */}
+                                <div className='hidden group-hover:block absolute border-t-3 border-[var(--primary-color)] 
 top-10 w-[480px] bg-[var(--secondary-color)] !p-4 text-white 
 max-h-[400px] overflow-y-auto z-50'>
-                                {/* Top box  */}
-                                <div className='flex items-center'>
-                                    <div className='md:w-[350px]'>
-                                        <p className='font-[Orbitron] text-[12px] text-[#ffd23f]'>10 Owner Operator Guides</p>
+                                    {/* Top box  */}
+                                    <div className='flex items-center'>
+                                        <div className='md:w-[350px]'>
+                                            <p className='font-[Orbitron] text-[12px] text-[#ffd23f]'>10 Owner Operator Guides</p>
+                                        </div>
+
+                                        <div className='h-[1px] bg-gray-600 w-full '></div>
                                     </div>
 
-                                    <div className='h-[1px] bg-gray-600 w-full '></div>
+                                    {/* List Container  */}
+                                    {/* Row  */}
+
+                                    <div className='flex gap-4 justify-between !px-2 !mt-1  gap-2'>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+
+                                    </div>
+                                    {/* Row  */}
+
+                                    <div className='flex gap-4 justify-between !px-2 !mt-1 '>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+
+                                    </div>
+                                    {/* Row  */}
+
+                                    <div className='flex gap-4 justify-between !px-2 !mt-1 '>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+
+                                    </div>
+                                    {/* Row  */}
+
+                                    <div className='flex gap-4 justify-between !px-2 !mt-1 '>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+
+                                    </div>
+                                    {/* Row  */}
+
+                                    <div className='flex gap-4 justify-between !px-2 !mt-1 '>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        {/* Card  */}
+                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <div className='md:w-[150px]'>
+                                                <p>How to start a trucking company</p>
+                                            </div>
+                                        </div>
+                                        </a>
+
+                                    </div>
+
                                 </div>
-
-                                {/* List Container  */}
-                                {/* Row  */}
-
-                                <div className='flex gap-4 justify-between !px-2 !mt-1  gap-2'>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-
-                                </div>
-                                {/* Row  */}
-
-                                <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-
-                                </div>
-                                {/* Row  */}
-
-                                <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-
-                                </div>
-                                {/* Row  */}
-
-                                <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-
-                                </div>
-                                {/* Row  */}
-
-                                <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-                                    {/* Card  */}
-                                    <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                        <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                        <div className='md:w-[150px]'>
-                                            <p>How to start a trucking company</p>
-                                        </div>
-                                    </div>
-                                    </a>
-
-                                </div>
-
                             </div>
+                            {/* Card  */}
+                            <a href="">
+                                <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
+                                    <div className='flex gap-2 items-center  '>
+                                        <p>📚</p>
+                                        <p className='font-bold  text-2xl'>Market Updates</p>
+                                    </div>
+                                    <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
+
+
+                                </div>
+                            </a>
+                            {/* Card  */}
+                            <a href="">
+                                <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
+                                    <div className='flex gap-2 items-center  '>
+                                        <p>📚</p>
+                                        <p className='font-bold  text-2xl'>Glossary</p>
+                                    </div>
+                                    <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
+
+
+                                </div>
+                            </a>
+                            {/* Card  */}
+                            <a href="">
+                                <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
+                                    <div className='flex gap-2 items-center  '>
+                                        <p>📚</p>
+                                        <p className='font-bold  text-2xl'>Master FAQ</p>
+                                    </div>
+                                    <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
+
+
+                                </div>
+                            </a>
+                            {/* Card  */}
+                            <a href="">
+                                <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
+                                    <div className='flex gap-2 items-center  '>
+                                        <p>📚</p>
+                                        <p className='font-bold  text-2xl'>State Regs</p>
+                                    </div>
+                                    <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
+
+
+                                </div>
+                            </a>
+
                         </div>
-                        {/* Card  */}
-                        <a href="">
-                            <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
-                                <div className='flex gap-2 items-center  '>
-                                    <p>📚</p>
-                                    <p className='font-bold  text-2xl'>Market Updates</p>
-                                </div>
-                                <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
 
-                            </div>
-                        </a>
-                        {/* Card  */}
-                        <a href="">
-                            <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
-                                <div className='flex gap-2 items-center  '>
-                                    <p>📚</p>
-                                    <p className='font-bold  text-2xl'>Glossary</p>
-                                </div>
-                                <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
-
-
-                            </div>
-                        </a>
-                        {/* Card  */}
-                        <a href="">
-                            <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
-                                <div className='flex gap-2 items-center  '>
-                                    <p>📚</p>
-                                    <p className='font-bold  text-2xl'>Master FAQ</p>
-                                </div>
-                                <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
-
-
-                            </div>
-                        </a>
-                        {/* Card  */}
-                        <a href="">
-                            <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
-                                <div className='flex gap-2 items-center  '>
-                                    <p>📚</p>
-                                    <p className='font-bold  text-2xl'>State Regs</p>
-                                </div>
-                                <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
-
-
-                            </div>
-                        </a>
 
                     </div>
 
+
+                </div>
+                {/* Links  */}
+                <div className='wrapper flex flex-col md:w-[1050px] !m-auto'>
+                    {/* Heading  */}
+                    <div>
+                        <h4 className='text-[#004e89] font-bold font-[Orbitron]'>10 Guides + 4 Resource Sections</h4>
+                    </div>
+                    {/* Circle Links  */}
+                    <div className="flex flex-wrap">
+                        {/* card  */}
+                        <a href=""><div className="rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className='text-[#004e89] font-bold'>01 Start a Trucking Company</p>
+                        </div>
+                        </a>
+                    </div>
 
                 </div>
 
