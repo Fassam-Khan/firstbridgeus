@@ -161,7 +161,7 @@ const Contact = () => {
                         {/* First Name & Last Name */}
                         <div className='flex justify-between gap-4 flex-wrap'>
                             <div className='flex flex-col gap-2 md:w-auto w-full flex-1'>
-                                <label htmlFor="firstName" className='font-semibold text-lg'>FIRST NAME*</label>
+                                <label form="firstName" className='font-semibold text-lg'>FIRST NAME*</label>
                                 <div className='group w-full'>
                                     <input
                                         type="text"
@@ -177,7 +177,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className='flex flex-col gap-2 md:w-auto w-full flex-1'>
-                                <label htmlFor="lastName" className='font-semibold text-lg'>LAST NAME*</label>
+                                <label form="lastName" className='font-semibold text-lg'>LAST NAME*</label>
                                 <div className='group w-full'>
                                     <input
                                         type="text"
@@ -197,7 +197,7 @@ const Contact = () => {
                         {/* Email & Phone */}
                         <div className='flex justify-between gap-4 flex-wrap'>
                             <div className='flex flex-col gap-2 md:w-auto w-full flex-1'>
-                                <label htmlFor="email" className='font-semibold text-lg'>EMAIL*</label>
+                                <label form="email" className='font-semibold text-lg'>EMAIL*</label>
                                 <div className='group w-full'>
                                     <input
                                         type="email"
@@ -213,7 +213,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className='flex flex-col gap-2 md:w-auto w-full flex-1'>
-                                <label htmlFor="phone" className='font-semibold text-lg'>MOBILE PHONE NUMBER*</label>
+                                <label form="phone" className='font-semibold text-lg'>MOBILE PHONE NUMBER*</label>
                                 <div className='group w-full'>
                                     <input
                                         type="tel"
@@ -232,7 +232,7 @@ const Contact = () => {
 
                         {/* MC Number  */}
                         <div className='group w-full gap-2 flex flex-col'>
-                            <label htmlFor="mcNumber" className='font-semibold text-lg'>MC NUMBER*</label>
+                            <label form="mcNumber" className='font-semibold text-lg'>MC NUMBER*</label>
                             <input
                                 type="text"
                                 name="mcNumber"
@@ -248,7 +248,7 @@ const Contact = () => {
 
                         {/* Message  */}
                         <div className='group w-full gap-2 flex flex-col'>
-                            <label htmlFor="message" className='font-semibold text-lg'>TELL US ABOUT YOUR NEED</label>
+                            <label form="message" className='font-semibold text-lg'>TELL US ABOUT YOUR NEED</label>
                             <textarea
                                 name="message"
                                 id="message"
