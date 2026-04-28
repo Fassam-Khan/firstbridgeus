@@ -23,6 +23,8 @@ const Footer = () => {
                         <a href={'/#services'}><li className='hover:text-[var(--primary-color)]'>Services</li></a>
                         <a href={'/#whyus'}><li className='hover:text-[var(--primary-color)]'>Why Choose Us</li></a>
                         <a href={'/#contact'}><li className='hover:text-[var(--primary-color)]'>Contact</li></a>
+                        <Link href={'/resources'}><li className='hover:text-[var(--primary-color)]'>Resources</li></Link>
+
                         </ul>
                     </div>
                     {/* Services  */}

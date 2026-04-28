@@ -302,16 +302,51 @@ max-h-[400px] overflow-y-auto z-50'>
 
                 </div>
                 {/* Links  */}
-                <div className='wrapper flex flex-col md:w-[1050px] !m-auto'>
+                <div className='wrapper flex flex-col md:w-[1050px] !m-auto gap-4'>
                     {/* Heading  */}
                     <div>
-                        <h4 className='text-[#004e89] font-bold font-[Orbitron]'>10 Guides + 4 Resource Sections</h4>
+                        <h4 className='text-[#004e89] font-bold font-[Orbitron] '>10 Guides + 4 Resource Sections</h4>
                     </div>
                     {/* Circle Links  */}
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap gap-4 ">
                         {/* card  */}
-                        <a href=""><div className="rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
-                            <p className='text-[#004e89] font-bold'>01 Start a Trucking Company</p>
+                        <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>01 Start a Trucking Company</p>
+                        </div>
+                        </a>
+                          {/* card  */}
+                          <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>02 Get Loads with New MC </p>
+                        </div>
+                        </a>
+                            {/* card  */}
+                            <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>03 Cost Per Mile Guide </p>
+                        </div>
+                        </a>
+                        {/* card  */}
+                        <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>04 Average Rate Per Mile </p>
+                        </div>
+                        </a>
+                          {/* card  */}
+                          <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>05 Startup Cost Guide</p>
+                        </div>
+                        </a>
+                             {/* card  */}
+                             <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>06 How Dispatch Work</p>
+                        </div>
+                        </a>
+                              {/* card  */}
+                              <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>07 Best Load Boards</p>
+                        </div>
+                        </a>
+                             {/* card  */}
+                             <a href=""><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>08 Reduce Deadhead Miles</p>
                         </div>
                         </a>
                     </div>
