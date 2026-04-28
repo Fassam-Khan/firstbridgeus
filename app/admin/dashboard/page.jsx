@@ -111,7 +111,9 @@ const AdminDashboard = () => {
                         <div>
                             <h1 className='text-3xl font-bold'>Admin Dashboard</h1>
                             <p className='text-blue-100 mt-1'>Contact Form Submissions</p>
+                           
                         </div>
+                        <a href="/admin/dashboard/add-post" className='!mr-4 border-2 rounded !py-1 !px-2 bg-[var(--secondary-color)] font-bold border-gray-300'>Add Post</a>
                         <button
                             onClick={handleLogout}
                             className='bg-white text-[var(--primary-color)] px-6 !py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors'

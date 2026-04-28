@@ -5,6 +5,7 @@ import {
     CarouselContent,
     CarouselItem,
 } from "@/components/ui/carousel"
+import BlogPage from '@/component/GettAllBlog'
 const page = () => {
     return (
         <div>
@@ -384,6 +385,13 @@ max-h-[400px] overflow-y-auto z-50'>
                 </div>
 
             </div>
+            {/* Get All Blogs  */}
+            <div>
+                <div className="wrapper">
+                    <BlogPage/>
+                </div>
+            </div>
+
 
 
         </div>

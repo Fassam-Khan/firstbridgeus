@@ -264,7 +264,7 @@ const Contact = () => {
                                 <input type="checkbox" checked={formData.isSMS} id="sms" name="sms" value={formData.isSMS} onChange={(e) =>
                                     setFormData({ ...formData, isSMS: e.target.checked })
                                 } />
-                                <label for="sms" className='text-sm'>By providing your phone number and submitting any form on Firstbridgeus, you agree to receive SMS (text) messages from us. View our <Link className='text-[var(--primary-color)] font-bold' href={'/'}>Privacy Policy</Link> and <Link className='font-bold text-[var(--primary-color)]' href={'/'}>SMS Policy</Link></label>
+                                <label htmlFor="sms" className='text-sm'>By providing your phone number and submitting any form on Firstbridgeus, you agree to receive SMS (text) messages from us. View our <Link className='text-[var(--primary-color)] font-bold' href={'/'}>Privacy Policy</Link> and <Link className='font-bold text-[var(--primary-color)]' href={'/'}>SMS Policy</Link></label>
                             </div>
 
                             <div>
@@ -278,7 +278,7 @@ const Contact = () => {
                             <input type="checkbox" checked={formData.isSubscribe} id="subscribe" name="subscribe" value={formData.isSubscribe} onChange={(e)=>{
                                 setFormData({...formData, isSubscribe:e.target.checked})
                             }} />
-                            <label for="subscribe" className='text-sm'>I agree to recieve email updates about tracking opportunities and dispatch services from First Bridge Dispatch Services</label>
+                            <label htmlFor="subscribe" className='text-sm'>I agree to recieve email updates about tracking opportunities and dispatch services from First Bridge Dispatch Services</label>
                         </div>
 
                         <button
