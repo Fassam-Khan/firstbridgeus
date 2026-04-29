@@ -45,6 +45,7 @@ function AccordionTrigger({
         )}
         {...props}>
         {children}
+        
         <ChevronDownIcon
           data-slot="accordion-trigger-icon"
           className="pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden" />

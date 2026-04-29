@@ -1,15 +1,11 @@
 import React from 'react'
-import Editor from '@/component/Editor'
 
-const page = () => {
-  
-  
-   
+const page = ({params}) => {
 
-
+  console.log(params)
   return (
     <div>
-        
+      <h4>Comming Soon .....</h4>
       
     </div>
   )

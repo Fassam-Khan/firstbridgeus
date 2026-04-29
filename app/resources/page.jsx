@@ -388,6 +388,9 @@ max-h-[400px] overflow-y-auto z-50'>
             {/* Get All Blogs  */}
             <div>
                 <div className="wrapper">
+                    <div  className='font-bold text-center  md:text-3xl text-lg text-[var(--secondary-color)] !mt-4'>
+                        <h3>This Is Blogs</h3>
+                    </div>
                     <BlogPage/>
                 </div>
             </div>
