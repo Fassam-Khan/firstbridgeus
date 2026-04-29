@@ -4,26 +4,60 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { NextResponse } from "next/server"
+    import { addDoc, collection, serverTimestamp } from "firebase/firestore"
+
+
+    import { db } from "@/lib/firebase"
+    import {
+    getDocs,
+    orderBy,
+    query,
+    deleteDoc,
+    updateDoc,
+    where
+    } from "firebase/firestore"
 import Link from "next/link"
-async function getBlogs() {
-  // Use VERCEL_URL if it exists, otherwise fallback to localhost
-  const baseUrl = process.env.NODE_ENV === 'production' 
-  ? `https://${process.env.VERCEL_URL}` // Vercel automatically ye variable deta hai
-  : "http://localhost:3000";
+import { doc, getDoc } from "firebase/firestore";
+// async function getBlogs() {
 
-  const res = await fetch(`${baseUrl}/api/blog`, {
-    cache: "no-store",
-  });
+//   // Use VERCEL_URL if it exists, otherwise fallback to localhost
+//   const baseUrl = process.env.NODE_ENV === 'production' 
+//   ? `https://${process.env.VERCEL_URL}` // Vercel automatically ye variable deta hai
+//   : "http://localhost:3000";
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch blogs');
-  }
+//   const res = await fetch(`${baseUrl}/api/blog`, {
+//     cache: "no-store",
+//   });
 
-  return res.json();
-}
+//   if (!res.ok) {
+//     throw new Error('Failed to fetch blogs');
+//   }
+
+//   return res.json();
+// }
+
+    // ✅ GET BLOGS
+    const getBlogs = async ()=>{
+ async function  GET() {
+        const q =  query(collection(db, "blogs"), orderBy("createdAt", "desc"))
+        const snapshot = await getDocs(q)
+    
+        const blogs = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+        }))
+    
+        return blogs
+    }
+
+    }
+    
+   
 
 export default async function BlogPage() {
   const blogs = await getBlogs()
+  console.log("blog",blogs)
 
   return (
     <div>
@@ -33,7 +67,7 @@ export default async function BlogPage() {
         defaultValue="shipping"
         className=" flex   gap-6 justify-center items-center md:w-[900px] !m-auto"
       >
-          {blogs.map((blog) => {
+          {blogs?.map((blog) => {
     const text = blog.content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 
     return (
