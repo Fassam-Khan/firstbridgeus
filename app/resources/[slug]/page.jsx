@@ -2,7 +2,9 @@ import React from 'react'
 
 const page = ({params}) => {
 
-  console.log(params)
+  const {slug}= params
+
+
   return (
     <div>
       <h4>Comming Soon .....</h4>

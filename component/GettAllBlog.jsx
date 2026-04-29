@@ -5,12 +5,21 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import Link from "next/link"
-
 async function getBlogs() {
-  const res = await fetch("http://localhost:3000/api/blog", {
+  // Use VERCEL_URL if it exists, otherwise fallback to localhost
+  const baseUrl = process.env.NODE_ENV === 'production' 
+  ? `https://${process.env.VERCEL_URL}` // Vercel automatically ye variable deta hai
+  : "http://localhost:3000";
+
+  const res = await fetch(`${baseUrl}/api/blog`, {
     cache: "no-store",
-  })
-  return res.json()
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch blogs');
+  }
+
+  return res.json();
 }
 
 export default async function BlogPage() {
