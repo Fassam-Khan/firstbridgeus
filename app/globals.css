@@ -126,3 +126,8 @@ a{
 html {
   overflow-y: scroll;
 }
+.ProseMirror {
+  min-height: 400px;
+  padding: 12px;
+  outline: none;
+}

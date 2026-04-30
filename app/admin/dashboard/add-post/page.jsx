@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import dynamic from "next/dynamic"
+import { SimpleEditor } from "@/components/tiptap-templates/simple/simple-editor"
 
 const Editor = dynamic(() => import("@/component/Editor"), {
   ssr: false,
@@ -80,8 +81,7 @@ export default function CreateBlog() {
       />
 
       {/* Editor */}
-      <Editor onChange={setContent} />
-
+      <SimpleEditor  content={content} setContent={setContent} />
       {/* Save Button */}
       <button
         onClick={handleSave}
