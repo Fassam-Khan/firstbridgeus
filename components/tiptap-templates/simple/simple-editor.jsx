@@ -1,247 +1,128 @@
-"use client"
+import { useEditor, EditorContent } from "@tiptap/react"
+import StarterKit from "@tiptap/starter-kit"
+import Underline from "@tiptap/extension-underline"
+import TextAlign from "@tiptap/extension-text-align"
+import Link from "@tiptap/extension-link"
+import Color from "@tiptap/extension-color"
+import { useEffect, memo } from "react"  // ✅ memo import karo
+import { TextStyle } from "@tiptap/extension-text-style"
 
-import { useEffect, useRef, useState } from "react"
-import { EditorContent, EditorContext, useEditor } from "@tiptap/react"
 
-// --- Tiptap Core Extensions ---
-import { StarterKit } from "@tiptap/starter-kit"
-import { Image } from "@tiptap/extension-image"
-import { TaskItem, TaskList } from "@tiptap/extension-list"
-import { TextAlign } from "@tiptap/extension-text-align"
-import { Typography } from "@tiptap/extension-typography"
-import { Highlight } from "@tiptap/extension-highlight"
-import { Subscript } from "@tiptap/extension-subscript"
-import { Superscript } from "@tiptap/extension-superscript"
-import { Selection } from "@tiptap/extensions"
 
-// --- UI Primitives ---
-import { Button } from "@/components/tiptap-ui-primitive/button"
-import { Spacer } from "@/components/tiptap-ui-primitive/spacer"
-import {
-  Toolbar,
-  ToolbarGroup,
-  ToolbarSeparator,
-} from "@/components/tiptap-ui-primitive/toolbar"
 
-// --- Tiptap Node ---
-import { ImageUploadNode } from "@/components/tiptap-node/image-upload-node/image-upload-node-extension"
-import { HorizontalRule } from "@/components/tiptap-node/horizontal-rule-node/horizontal-rule-node-extension"
-import "@/components/tiptap-node/blockquote-node/blockquote-node.scss"
-import "@/components/tiptap-node/code-block-node/code-block-node.scss"
-import "@/components/tiptap-node/horizontal-rule-node/horizontal-rule-node.scss"
-import "@/components/tiptap-node/list-node/list-node.scss"
-import "@/components/tiptap-node/image-node/image-node.scss"
-import "@/components/tiptap-node/heading-node/heading-node.scss"
-import "@/components/tiptap-node/paragraph-node/paragraph-node.scss"
+function MenuBar({ editor }) {
+  if (!editor) return null
 
-// --- Tiptap UI ---
-import { HeadingDropdownMenu } from "@/components/tiptap-ui/heading-dropdown-menu"
-import { ImageUploadButton } from "@/components/tiptap-ui/image-upload-button"
-import { ListDropdownMenu } from "@/components/tiptap-ui/list-dropdown-menu"
-import { BlockquoteButton } from "@/components/tiptap-ui/blockquote-button"
-import { CodeBlockButton } from "@/components/tiptap-ui/code-block-button"
-import {
-  ColorHighlightPopover,
-  ColorHighlightPopoverContent,
-  ColorHighlightPopoverButton,
-} from "@/components/tiptap-ui/color-highlight-popover"
-import {
-  LinkPopover,
-  LinkContent,
-  LinkButton,
-} from "@/components/tiptap-ui/link-popover"
-import { MarkButton } from "@/components/tiptap-ui/mark-button"
-import { TextAlignButton } from "@/components/tiptap-ui/text-align-button"
-import { UndoRedoButton } from "@/components/tiptap-ui/undo-redo-button"
-
-// --- Icons ---
-import { ArrowLeftIcon } from "@/components/tiptap-icons/arrow-left-icon"
-import { HighlighterIcon } from "@/components/tiptap-icons/highlighter-icon"
-import { LinkIcon } from "@/components/tiptap-icons/link-icon"
-
-// --- Hooks ---
-import { useIsBreakpoint } from "@/hooks/use-is-breakpoint"
-import { useWindowSize } from "@/hooks/use-window-size"
-import { useCursorVisibility } from "@/hooks/use-cursor-visibility"
-
-// --- Components ---
-import { ThemeToggle } from "@/components/tiptap-templates/simple/theme-toggle"
-
-// --- Lib ---
-import { handleImageUpload, MAX_FILE_SIZE } from "@/lib/tiptap-utils"
-
-// --- Styles ---
-import "@/components/tiptap-templates/simple/simple-editor.scss"
-
-import content from "@/components/tiptap-templates/simple/data/content.json"
-
-const MainToolbarContent = ({
-  onHighlighterClick,
-  onLinkClick,
-  isMobile
-}) => {
-  return (
-    <>
-      <Spacer />
-      <ToolbarGroup>
-        <UndoRedoButton action="undo" />
-        <UndoRedoButton action="redo" />
-      </ToolbarGroup>
-      <ToolbarSeparator />
-      <ToolbarGroup>
-        <HeadingDropdownMenu modal={false} levels={[1, 2, 3, 4]} />
-        <ListDropdownMenu modal={false} types={["bulletList", "orderedList", "taskList"]} />
-        <BlockquoteButton />
-        <CodeBlockButton />
-      </ToolbarGroup>
-      <ToolbarSeparator />
-      <ToolbarGroup>
-        <MarkButton type="bold" />
-        <MarkButton type="italic" />
-        <MarkButton type="strike" />
-        <MarkButton type="code" />
-        <MarkButton type="underline" />
-        {!isMobile ? (
-          <ColorHighlightPopover />
-        ) : (
-          <ColorHighlightPopoverButton onClick={onHighlighterClick} />
-        )}
-        {!isMobile ? <LinkPopover /> : <LinkButton onClick={onLinkClick} />}
-      </ToolbarGroup>
-      <ToolbarSeparator />
-      <ToolbarGroup>
-        <MarkButton type="superscript" />
-        <MarkButton type="subscript" />
-      </ToolbarGroup>
-      <ToolbarSeparator />
-      <ToolbarGroup>
-        <TextAlignButton align="left" />
-        <TextAlignButton align="center" />
-        <TextAlignButton align="right" />
-        <TextAlignButton align="justify" />
-      </ToolbarGroup>
-      <ToolbarSeparator />
-      <ToolbarGroup>
-        <ImageUploadButton text="Add" />
-      </ToolbarGroup>
-      <Spacer />
-      {isMobile && <ToolbarSeparator />}
-      <ToolbarGroup>
-        <ThemeToggle />
-      </ToolbarGroup>
-    </>
-  );
-}
-
-const MobileToolbarContent = ({
-  type,
-  onBack
-}) => (
-  <>
-    <ToolbarGroup>
-      <Button variant="ghost" onClick={onBack}>
-        <ArrowLeftIcon className="tiptap-button-icon" />
-        {type === "highlighter" ? (
-          <HighlighterIcon className="tiptap-button-icon" />
-        ) : (
-          <LinkIcon className="tiptap-button-icon" />
-        )}
-      </Button>
-    </ToolbarGroup>
-
-    <ToolbarSeparator />
-
-    {type === "highlighter" ? (
-      <ColorHighlightPopoverContent />
-    ) : (
-      <LinkContent />
-    )}
-  </>
-)
-
-export function SimpleEditor({ content, setContent }) {
-  const isMobile = useIsBreakpoint()
-  const { height } = useWindowSize()
-  const [mobileView, setMobileView] = useState("main")
-  const toolbarRef = useRef(null)
-
-  const editor = useEditor({
-    immediatelyRender: false,
-    editorProps: {
-      attributes: {
-        autocomplete: "off",
-        autocorrect: "off",
-        autocapitalize: "off",
-        "aria-label": "Main content area, start typing to enter text.",
-        class: "simple-editor",
-      },
-    },
-    extensions: [
-      StarterKit.configure({
-        horizontalRule: false,
-        link: {
-          openOnClick: false,
-          enableClickSelection: true,
-        },
-      }),
-      HorizontalRule,
-      TextAlign.configure({ types: ["heading", "paragraph"] }),
-      TaskList,
-      TaskItem.configure({ nested: true }),
-      Highlight.configure({ multicolor: true }),
-      Image,
-      Typography,
-      Superscript,
-      Subscript,
-      Selection,
-      ImageUploadNode.configure({
-        accept: "image/*",
-        maxSize: MAX_FILE_SIZE,
-        limit: 3,
-        upload: handleImageUpload,
-        onError: (error) => console.error("Upload failed:", error),
-      }),
-    ],
-    content,
-  })
-
-  const rect = useCursorVisibility({
-    editor,
-    overlayHeight: toolbarRef.current?.getBoundingClientRect().height ?? 0,
-  })
-
-  useEffect(() => {
-    if (!isMobile && mobileView !== "main") {
-      setMobileView("main")
-    }
-  }, [isMobile, mobileView])
+  const btn = (action, label, isActive = false) =>
+    `cursor-pointer px-2 py-1 rounded text-sm border ${
+      isActive ? "bg-black text-white" : "bg-white hover:bg-gray-100"
+    }`
 
   return (
-    <div className="simple-editor-wrapper">
-      <EditorContext.Provider value={{ editor }}>
-        <Toolbar
-          ref={toolbarRef}
-          style={{
-            ...(isMobile
-              ? {
-                  bottom: `calc(100% - ${height - rect.y}px)`,
-                }
-              : {}),
-          }}>
-          {mobileView === "main" ? (
-            <MainToolbarContent
-              onHighlighterClick={() => setMobileView("highlighter")}
-              onLinkClick={() => setMobileView("link")}
-              isMobile={isMobile} />
-          ) : (
-            <MobileToolbarContent
-              type={mobileView === "highlighter" ? "highlighter" : "link"}
-              onBack={() => setMobileView("main")} />
-          )}
-        </Toolbar>
+    <div className="flex flex-wrap gap-1 border-b p-2 bg-gray-50">
+      <button onClick={() => editor.chain().focus().toggleBold().run()}
+        className={btn(null, "B", editor.isActive("bold"))}><b>B</b></button>
+      <button onClick={() => editor.chain().focus().toggleItalic().run()}
+        className={btn(null, "I", editor.isActive("italic"))}><i>I</i></button>
+      <button onClick={() => editor.chain().focus().toggleUnderline().run()}
+        className={btn(null, "U", editor.isActive("underline"))}><u>U</u></button>
+      <button onClick={() => editor.chain().focus().toggleStrike().run()}
+        className={btn(null, "S", editor.isActive("strike"))}><s>S</s></button>
+      <button onClick={() => editor.chain().focus().toggleCode().run()}
+        className={btn(null, "Code", editor.isActive("code"))}>{"</>"}</button>
 
-        <EditorContent editor={editor} role="presentation" className="simple-editor-content" />
-      </EditorContext.Provider>
+      <div className="w-px bg-gray-300 mx-1" />
+
+      {[1, 2, 3].map((level) => (
+        <button key={level}
+          onClick={() => editor.chain().focus().toggleHeading({ level }).run()}
+          className={btn(null, `H${level}`, editor.isActive("heading", { level }))}>
+          H{level}
+        </button>
+      ))}
+
+      <div className="w-px bg-gray-300 mx-1" />
+
+      <button onClick={() => editor.chain().focus().setTextAlign("left").run()}
+        className={btn(null, "Left", editor.isActive({ textAlign: "left" }))}>≡←</button>
+      <button onClick={() => editor.chain().focus().setTextAlign("center").run()}
+        className={btn(null, "Center", editor.isActive({ textAlign: "center" }))}>≡</button>
+      <button onClick={() => editor.chain().focus().setTextAlign("right").run()}
+        className={btn(null, "Right", editor.isActive({ textAlign: "right" }))}>≡→</button>
+      <button onClick={() => editor.chain().focus().setTextAlign("justify").run()}
+        className={btn(null, "Justify", editor.isActive({ textAlign: "justify" }))}>☰</button>
+
+      <div className="w-px bg-gray-300 mx-1" />
+
+      <button onClick={() => editor.chain().focus().toggleBulletList().run()}
+        className={btn(null, "UL", editor.isActive("bulletList"))}>• List</button>
+      <button onClick={() => editor.chain().focus().toggleOrderedList().run()}
+        className={btn(null, "OL", editor.isActive("orderedList"))}>1. List</button>
+      <button onClick={() => editor.chain().focus().toggleBlockquote().run()}
+        className={btn(null, "Quote", editor.isActive("blockquote"))}>❝</button>
+      <button onClick={() => editor.chain().focus().toggleCodeBlock().run()}
+        className={btn(null, "Code Block", editor.isActive("codeBlock"))}>{"{ }"}</button>
+
+      <div className="w-px bg-gray-300 mx-1" />
+
+      <button onClick={() => {
+        const url = window.prompt("Enter URL")
+        if (url) editor.chain().focus().setLink({ href: url }).run()
+      }} className={btn(null, "Link", editor.isActive("link"))}>🔗</button>
+      <button onClick={() => editor.chain().focus().unsetLink().run()}
+        className="cursor-pointer px-2 py-1 rounded text-sm border bg-white hover:bg-gray-100">Unlink</button>
+
+      <div className="w-px bg-gray-300 mx-1" />
+
+      <button onClick={() => editor.chain().focus().undo().run()}
+        className="cursor-pointer px-2 py-1 rounded text-sm border bg-white hover:bg-gray-100">↩ Undo</button>
+      <button onClick={() => editor.chain().focus().redo().run()}
+        className="cursor-pointer px-2 py-1 rounded text-sm border bg-white hover:bg-gray-100">↪ Redo</button>
+
+      <div className="w-px bg-gray-300 mx-1" />
+
+      <button onClick={() => editor.chain().focus().setHorizontalRule().run()}
+        className="cursor-pointer px-2 py-1 rounded text-sm border bg-white hover:bg-gray-100">— HR</button>
+      <button onClick={() => editor.chain().focus().clearNodes().unsetAllMarks().run()}
+        className="cursor-pointer px-2 py-1 rounded text-sm border bg-white hover:bg-gray-100">✕ Clear</button>
     </div>
-  );
+  )
 }
+
+// ✅ KEY FIX: memo prevents re-mount on parent re-render
+const SimpleEditor = memo(function SimpleEditor({ content, onChange, placeholder }) {
+  const editor = useEditor({
+    extensions: [
+      StarterKit,
+      Underline,
+      TextStyle,
+      Color,
+      Link.configure({ openOnClick: false }),
+      TextAlign.configure({ types: ["heading", "paragraph"] }),
+    ],
+    content: content || "",
+    immediatelyRender: false,
+    onUpdate({ editor }) {
+      onChange?.(editor.getHTML())
+    },
+  })
+
+  // ✅ Sirf jab bahar se content aaye (edit mode), tab sync karo
+  useEffect(() => {
+    if (editor && content !== editor.getHTML()) {
+      editor.commands.setContent(content || "")
+    }
+  }, [editor, content])
+
+  return (
+    <div className="border rounded-lg overflow-hidden">
+      <MenuBar editor={editor} />
+      <EditorContent
+        editor={editor}
+        className="min-h-[300px] p-4 prose max-w-none focus:outline-none"
+      />
+    </div>
+  )
+})
+
+export default SimpleEditor

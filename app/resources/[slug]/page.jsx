@@ -7,17 +7,19 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 const page = () => {
   const parmas = useParams()
-
+console.log(parmas)
   const [blog, setdata] = useState({})
   const [Loading, setLoading] = useState(true)
 
   const getBlog = async () => {
+
     try {
 
       const res = await fetch("/api/blog")
       const data = await res.json()
-      const singleBlog = data.find(t => t.slug === parmas.slug)
-      console.log(singleBlog)
+      console.log(data)
+       const singleBlog = await  data.find(t => t.slug === parmas.slug)
+     await console.log(singleBlog)
       await setdata(singleBlog)
       setLoading(false)
 
@@ -47,12 +49,12 @@ const page = () => {
             Back to blog</Link>
 
           <div className='!mt-6'>
-            <h2 className='font-[Orbitron] md:text-4xl text-lg font-bold'>{blog.title}</h2>
+            <h2 className='font-[Orbitron] md:text-4xl text-lg font-bold'>{blog?.title}</h2>
           </div>
 
           <div className='!mt-6'>
             <div
-              dangerouslySetInnerHTML={{ __html: blog.content }}
+              dangerouslySetInnerHTML={{ __html: blog?.content }}
             />
           </div>
         </div>
