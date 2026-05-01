@@ -11,15 +11,15 @@ console.log(parmas)
   const [blog, setdata] = useState({})
   const [Loading, setLoading] = useState(true)
 
+  
+
   const getBlog = async () => {
 
     try {
 
       const res = await fetch("/api/blog")
       const data = await res.json()
-      console.log(data)
        const singleBlog = await  data.find(t => t.slug === parmas.slug)
-     await console.log(singleBlog)
       await setdata(singleBlog)
       setLoading(false)
 
@@ -43,7 +43,7 @@ console.log(parmas)
         {Loading && (
           <p>Loading...</p>
         )}
-        <div className="wrapper md:w-[800px] w-full !m-auto">
+        <div className="wrapper  md:w-[800px] w-full !m-auto">
           <Link href={'/'} className='text-[var(--primary-color)] font-semibold flex gap-2'>
             <ArrowLeft className="w-5 h-5" />
             Back to blog</Link>
@@ -52,7 +52,7 @@ console.log(parmas)
             <h2 className='font-[Orbitron] md:text-4xl text-lg font-bold'>{blog?.title}</h2>
           </div>
 
-          <div className='!mt-6'>
+          <div className='!mt-6 blog' >
             <div
               dangerouslySetInnerHTML={{ __html: blog?.content }}
             />
