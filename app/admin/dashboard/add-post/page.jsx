@@ -3,7 +3,6 @@ import dynamic from "next/dynamic"
 import { useCallback } from "react"
 
 import { useEffect, useState } from "react"
-import SimpleEditor from "@/components/tiptap-templates/simple/simple-editor"
 export default function CreateBlog() {
   const [title, setTitle] = useState("")
   const [content, setContent] = useState("")

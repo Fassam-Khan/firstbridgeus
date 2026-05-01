@@ -3,9 +3,11 @@ import StarterKit from "@tiptap/starter-kit"
 import Underline from "@tiptap/extension-underline"
 import TextAlign from "@tiptap/extension-text-align"
 import Link from "@tiptap/extension-link"
-import Color from "@tiptap/extension-color"
-import { useEffect, memo } from "react"  // ✅ memo import karo
+import Color from "@tiptap/extension-color" // ✅ memo import karo
 import { TextStyle } from "@tiptap/extension-text-style"
+import { useEffect } from "react"
+import { memo } from "react"
+
 
 
 
