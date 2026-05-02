@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '@/component/Header'
+
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
 } from "@/components/ui/carousel"
-import BlogPage from '@/component/GettAllBlog'
+import BlogsPage  from '@/component/GettAllBlog'
 const page = () => {
     return (
         <div>
@@ -391,7 +392,7 @@ max-h-[400px] overflow-y-auto z-50'>
                     <div  className='font-bold text-center  md:text-3xl text-lg text-[var(--secondary-color)] !mt-4'>
                         <h3>This Is Blogs</h3>
                     </div>
-                    <BlogPage/>
+                    <BlogsPage/>
                 </div>
             </div>
 

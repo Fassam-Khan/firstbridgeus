@@ -1,75 +1,17 @@
+import React from 'react'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
-
+import { getBlogs } from "@/lib/getBlogs"
 import Link from "next/link"
 
-const fetchBlog = async ()  =>{
-
-  try {
-    const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
-    const res = await fetch(`${baseUrl}/api/blog`, { cache: "no-store" });
-  return res.json()
-    
-  } catch (error) {
-    console.log(error)
-    
-  }
-
-
-
-}
-
-// async function getBlogs() {
-
-//   // Use VERCEL_URL if it exists, otherwise fallback to localhost
-//   const baseUrl = process.env.NODE_ENV === 'production' 
-//   ? `https://${process.env.VERCEL_URL}` // Vercel automatically ye variable deta hai
-//   : "http://localhost:3000";
-
-//   const res = await fetch(`${baseUrl}/api/blog`, {
-//     cache: "no-store",
-//   });
-
-//   if (!res.ok) {
-//     throw new Error('Failed to fetch blogs');
-//   }
-
-//   return res.json();
-// }
-
-// ✅ GET BLOGS
 export default async function BlogsPage() {
 
+  const blogs = await getBlogs();
 
-  // const getBlog  = async ()=>{
-  //   try {
-  
-  //     // 1. Firebase se data lana
-  //     const querySnapshot = await getDocs(collection(db, "blogs"));
-  //     blogs = querySnapshot.docs.map((doc) => ({
-  //       id: doc.id,
-  //       ...doc.data(),
-  //     }));
-  //   } catch (error) {
-  //     console.error("Firebase error:", error);
-  //   }
-  
-      
-  // }
-
- 
-
-
-
-const blogs = await fetchBlog()
-  
   return (
     <div>
       <Accordion
@@ -112,3 +54,6 @@ const blogs = await fetchBlog()
     </div>
   )
 }
+
+
+
