@@ -4,21 +4,28 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { NextResponse } from "next/server"
-import { addDoc, collection, serverTimestamp } from "firebase/firestore"
 
 
-import { db } from "@/lib/firebase"
-import {
-  getDocs,
-  orderBy,
-  query,
-  deleteDoc,
-  updateDoc,
-  where
-} from "firebase/firestore"
 import Link from "next/link"
-import { doc, getDoc } from "firebase/firestore";
+
+const fetchBlog = async ()  =>{
+
+  try {
+    const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+    const res = await fetch(`${baseUrl}/api/blog`, { cache: "no-store" });
+  return res.json()
+    
+  } catch (error) {
+    console.log(error)
+    
+  }
+
+
+
+}
+
 // async function getBlogs() {
 
 //   // Use VERCEL_URL if it exists, otherwise fallback to localhost
@@ -39,19 +46,30 @@ import { doc, getDoc } from "firebase/firestore";
 
 // ✅ GET BLOGS
 export default async function BlogsPage() {
-  let blogs = [];
 
-  try {
-    // 1. Firebase se data lana
-    const querySnapshot = await getDocs(collection(db, "blogs"));
-    blogs = querySnapshot.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-  } catch (error) {
-    console.error("Firebase error:", error);
-  }
 
+  // const getBlog  = async ()=>{
+  //   try {
+  
+  //     // 1. Firebase se data lana
+  //     const querySnapshot = await getDocs(collection(db, "blogs"));
+  //     blogs = querySnapshot.docs.map((doc) => ({
+  //       id: doc.id,
+  //       ...doc.data(),
+  //     }));
+  //   } catch (error) {
+  //     console.error("Firebase error:", error);
+  //   }
+  
+      
+  // }
+
+ 
+
+
+
+const blogs = await fetchBlog()
+  
   return (
     <div>
       <Accordion
