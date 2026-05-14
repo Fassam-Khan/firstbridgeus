@@ -12,14 +12,14 @@ import Image from 'next/image'
 const Hero = () => {
   const plugin = React.useRef(Autoplay({ delay: 3000 }))
   return (
-    <div className='w-[100%]  overflow-hidden p-3  border-b-3 border-[var(--primary-color)] '>
+    <div className='w-[100%]  overflow-hidden  border-b-3 border-[var(--primary-color)] '>
       <Carousel className="w-full relative  " plugins={[plugin.current]} opts={{ loop: true }} >
 
 
         <CarouselContent>
 
 
-          <CarouselItem className="pl-4  w-full bg-[url('/hero1.jpeg')] p-3 bg-no-repeat bg-cover bg-center   h-[400px]  "  >
+          <CarouselItem className="  w-full bg-[url('/hero1.jpeg')]  bg-no-repeat bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center md:items-start   bg-[#00000067] md:!pl-16 items-center '>
               <h1 className='md:text-5xl text-[20px]  font-[Orbitron] text-white font-bold'>YOUR ROUTE TO SUCCESS</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>Premium Truck Dispatch Services</p>
@@ -34,7 +34,7 @@ const Hero = () => {
 
 
           </CarouselItem>
-          <CarouselItem className="pl-4  w-full bg-[url('/hero2.jpeg')] p-3 bg-no-repeat bg-cover bg-center   h-[400px]  "  >
+          <CarouselItem className=" w-full bg-[url('/hero2.jpeg')]  bg-no-repeat bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center md:items-start   bg-[#00000067] md:!pl-16 items-center '>
               <h1 className='md:text-5xl text-[18px]  font-[Orbitron] text-white font-bold'>FIND HIGH-PAYING LOADS 24/7</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>Expert dispatcher working arround the clock</p>
@@ -49,7 +49,7 @@ const Hero = () => {
 
 
           </CarouselItem>
-          <CarouselItem className="pl-4  w-full bg-[url('/hero3.jpeg')] p-3 bg-no-repeat bg-cover bg-center   h-[400px]  "  >
+          <CarouselItem className="  w-full bg-[url('/hero3.jpeg')] bg-no-repeat bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center md:items-start   bg-[#00000067] md:!pl-16 items-center '>
               <h1 className='md:text-5xl text-[20px]  font-[Orbitron] text-white font-bold'>MAXIMIZE YOUR REVENUE</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>Keep your truck loaded and profitable</p>
@@ -64,7 +64,7 @@ const Hero = () => {
 
 
           </CarouselItem> 
-          <CarouselItem className="pl-4  w-full bg-[url('/hero5.jpeg')] p-3 bg-no-repeat bg-cover bg-center   h-[400px]  "  >
+          <CarouselItem className="  w-full bg-[url('/hero5.jpeg')]  bg-no-repeat bg-cover bg-center   h-[400px]  "  >
             <div className='border flex flex-col gap-4 h-full justify-center md:items-start   bg-[#00000067] md:!pl-16 items-center '>
               <h1 className='md:text-5xl text-[16px]  font-[Orbitron] text-white font-bold'>GROW YOUR TRUCKING BUSSINESS</h1>
               <p className='text-white md:text-2xl text-lg font-semibold'>From one truck to a fleet</p>
