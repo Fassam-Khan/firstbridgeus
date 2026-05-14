@@ -3,6 +3,14 @@ import dynamic from "next/dynamic"
 import { useCallback } from "react"
 
 import { useEffect, useState } from "react"
+
+
+
+const SimpleEditor = dynamic(
+  () => import("@/components/tiptap-templates/simple/simple-editor"),
+  { ssr: false }
+)
+
 export default function CreateBlog() {
   const [title, setTitle] = useState("")
   const [content, setContent] = useState("")
@@ -15,10 +23,7 @@ export default function CreateBlog() {
     setBlogs(data)
   }
   // ✅ Fix: load SimpleEditor only on client, skip SSR entirely
-const SimpleEditor = dynamic(
-  () => import("@/components/tiptap-templates/simple/simple-editor"),
-  { ssr: false }
-)
+
 
   useEffect(() => {
     fetchBlogs()
@@ -66,13 +71,13 @@ const SimpleEditor = dynamic(
   }
 
   return (
-    <div className="p-6">
+    <div className="!p-6">
       <h1 className="text-xl font-bold mb-4">
         {editId ? "Edit Blog" : "Create Blog"}
       </h1>
 
       <input
-        className="border p-2 w-full mb-4"
+        className="border !p-2 w-full !mb-4"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Blog title"
@@ -104,10 +109,10 @@ const SimpleEditor = dynamic(
         </button>
       )}
 
-      <div className="mt-10">
+      <div className="!mt-10">
         <h2 className="text-lg font-bold mb-4">All Blogs</h2>
         {blogs.map((blog) => (
-          <div key={blog.id} className="border p-4 mb-3">
+          <div key={blog.id} className="border !p-4 mb-3">
             <h3 className="font-semibold">{blog.title}</h3>
             <button onClick={() => handleEdit(blog)} className="text-blue-500 mr-3">
               Edit

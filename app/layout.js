@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={orbitron.className} >
+        <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+        </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
