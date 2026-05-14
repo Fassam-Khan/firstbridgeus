@@ -50,6 +50,14 @@ export default async function BlogsPage() {
           );
         })}
 
+<AccordionItem value="hdsb" className='bg-[#003D73]  !px-4 !py-4 rounded-xl  w-full h-auto'>
+        <AccordionTrigger className="font-[Orbitron] text-white font-bold md:text-2xl text-lg ">Average Trucking Rate Per Mile</AccordionTrigger>
+        <AccordionContent className="text-lg !h-auto text-white">
+        Knowing the average trucking rate per mile for your equipment type helps you evaluate whether any load is worth taking and gives you the data to negotiate confidently
+        <Link href={'/resources/average-trucking-rate-per-mile'}>  Read More </Link>
+        </AccordionContent>
+      </AccordionItem>
+
       </Accordion>
     </div>
   )
