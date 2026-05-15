@@ -33,7 +33,12 @@ const page = () => {
   useEffect(() => {
     getBlog()
   }, [])
-
+// 👇 ADD THIS HERE (inside component file, before return)
+const decodeHTML = (html) => {
+  const txt = document.createElement("textarea")
+  txt.innerHTML = html
+  return txt.value
+}
 
   return (
     <div>
