@@ -294,7 +294,7 @@ max-h-[400px] overflow-y-auto z-50'>
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
                                     <BadgeQuestionMark className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
-                                        <p className='font-bold  text-2xl'>Master FAQ</p>
+                                        <p className='font-bold  text-xl'>Master FAQ</p>
                                     </div>
                                     <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
@@ -307,7 +307,7 @@ max-h-[400px] overflow-y-auto z-50'>
                                     <div className='flex gap-2 items-center  '>
                                     <MapIcon className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
 
-                                        <p className='font-bold  text-2xl'>State Regs</p>
+                                        <p className='font-bold  text-xl'>State Regs</p>
                                     </div>
                                     <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
