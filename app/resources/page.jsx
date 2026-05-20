@@ -42,7 +42,8 @@ const page = async () => {
                                     {/* Card  */}
                                     <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                         <div className='flex gap-2 items-center  '>
-                                            <p>📚</p>
+                                        <Image src={'/book.svg'} width={24} height={24} alt='book' className='text-[var(--primary-color)]' />
+
                                             <p className='font-bold  text-2xl'>Guides</p>
                                         </div>
 
@@ -57,7 +58,8 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <p>📚</p>
+                                            <Image src={'/market.svg'} width={24} height={24} alt='market' />
+
                                                 <p className='font-bold  text-2xl'>Market Updates</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
