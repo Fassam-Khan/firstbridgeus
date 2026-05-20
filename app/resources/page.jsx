@@ -74,7 +74,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <GraduationCap/>
+                                                <GraduationCap className='text-[var(--primary-color)]'/>
                                                 <p className='font-bold  text-lg'>Glossary</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -89,7 +89,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <BadgeQuestionMark/>
+                                                <BadgeQuestionMark className='text-[var(--primary-color)]'/>
                                                 <p className='font-bold  text-lg'>Master FAQ</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -104,8 +104,8 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <MapIcon/>
-                                                <p className='font-bold  text-2xl'>State Regs</p>
+                                                <MapIcon className='text-[var(--primary-color)]'/>
+                                                <p className='font-bold  text-lg'>State Regs</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
