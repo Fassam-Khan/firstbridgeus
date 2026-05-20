@@ -199,13 +199,13 @@ max-h-[400px] overflow-y-auto z-50'>
 
                                     <div className='flex gap-4 justify-between !px-2 !mt-1 '>
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                        <Link href={'/resources/owner-operator-startup-cost-guide'}><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
                                             <p className='Orbitron text-[var(--primary-color)] font-bold'>05</p>
                                             <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                                <p>Owner Operator Startup Cost Guide</p>
                                             </div>
                                         </div>
-                                        </a>
+                                        </Link>
                                         {/* Card  */}
                                         <Link href={'/resources/how-dispatch-services-work'}><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
                                             <p className='Orbitron text-[var(--primary-color)] font-bold'>06</p>
@@ -348,7 +348,7 @@ max-h-[400px] overflow-y-auto z-50'>
                         </Link>
 
                         {/* card  */}
-                        <Link href={'/resources/how-to-calculate-trucking-profit-per-load'}>
+                        <Link href={'/resources/trucking-cost-per-mile-guide'}>
                             <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                                 <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>03 Cost Per Mile Guide </p>
                             </div>
@@ -360,7 +360,7 @@ max-h-[400px] overflow-y-auto z-50'>
                             </div>
                         </Link>
                         {/* card  */}
-                        <Link href={'/resources'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                        <Link href={'/resources/owner-operator-startup-cost-guide'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                             <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>05 Startup Cost Guide</p>
                         </div>
                         </Link>
@@ -417,10 +417,10 @@ max-h-[400px] overflow-y-auto z-50'>
             </div>
             {/* Get All Blogs  */}
             <div>
-                <div className="wrapper">
-                    <div className='font-bold text-center  md:text-3xl text-lg text-[var(--secondary-color)] !mt-4'>
+                <div className="wrapper !mt-10">
+                    {/* <div className='font-bold text-center  md:text-3xl text-lg text-[var(--secondary-color)] !mt-4'>
                         <h3>This Is Blogs</h3>
-                    </div>
+                    </div> */}
                     <BlogsPage />
                 </div>
             </div>

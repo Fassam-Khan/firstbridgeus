@@ -50,13 +50,22 @@ export default async function BlogsPage() {
           );
         })}
 
-<AccordionItem value="hdsb" className='bg-[#003D73]  !px-4 !py-4 rounded-xl  w-full h-auto'>
-        <AccordionTrigger className="font-[Orbitron] text-white font-bold md:text-2xl text-lg ">Average Trucking Rate Per Mile</AccordionTrigger>
-        <AccordionContent className="text-lg !h-auto text-white">
-        Knowing the average trucking rate per mile for your equipment type helps you evaluate whether any load is worth taking and gives you the data to negotiate confidently
-        <Link href={'/resources/average-trucking-rate-per-mile'}>  Read More </Link>
-        </AccordionContent>
-      </AccordionItem>
+        <AccordionItem value="hdsb" className='bg-[#003D73]  !px-4 !py-4 rounded-xl  w-full h-auto'>
+          <AccordionTrigger className="!font-[Orbitron] text-white font-bold md:text-xl text-lg ">Average Trucking Rate Per Mile</AccordionTrigger>
+          <AccordionContent className="text-lg !h-auto text-white">
+            Knowing the average trucking rate per mile for your equipment type helps you evaluate whether any load is worth taking and gives you the data to negotiate confidently
+            <Link href={'/resources/average-trucking-rate-per-mile'}>  Read More </Link>
+          </AccordionContent>
+        </AccordionItem>
+
+
+        <AccordionItem value="dfdfj" className='bg-[#003D73]  !px-4 !py-4 rounded-xl  w-full h-auto'>
+          <AccordionTrigger className="!font-[Orbitron] text-white font-bold md:text-xl text-lg ">Owner Operator Startup Cost Guide </AccordionTrigger>
+          <AccordionContent className="text-lg !h-auto text-white">
+          Becoming an owner operator requires careful financial planning. Understanding your true startup costs upfront prevents the cash flow problems that cause most new trucking businesses to fail in their first year.
+            <Link href={'/resources/owner-operator-startup-cost-guide'}>  Read More </Link>
+          </AccordionContent>
+        </AccordionItem>
 
       </Accordion>
     </div>
