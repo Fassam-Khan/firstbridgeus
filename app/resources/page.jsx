@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '@/component/Header'
 import { getBlogs } from "@/lib/getBlogs"
 import Image from 'next/image'
+import { GraduationCap, BadgeQuestionMark,  MapIcon } from 'lucide-react'
 
 
 import {
@@ -73,7 +74,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <p>📚</p>
+                                                <GraduationCap/>
                                                 <p className='font-bold  text-lg'>Glossary</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -88,7 +89,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <p>📚</p>
+                                                <BadgeQuestionMark/>
                                                 <p className='font-bold  text-lg'>Master FAQ</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -103,7 +104,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <p>📚</p>
+                                                <MapIcon/>
                                                 <p className='font-bold  text-2xl'>State Regs</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -279,8 +280,9 @@ max-h-[400px] overflow-y-auto z-50'>
                             <a href="">
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
-                                        <p>📚</p>
-                                        <p className='font-bold  text-2xl'>Glossary</p>
+                                    <GraduationCap className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
+
+                                        <p className='font-bold  text-xl'>Glossary</p>
                                     </div>
                                     <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
@@ -291,7 +293,7 @@ max-h-[400px] overflow-y-auto z-50'>
                             <a href="">
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
-                                        <p>📚</p>
+                                    <BadgeQuestionMark className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
                                         <p className='font-bold  text-2xl'>Master FAQ</p>
                                     </div>
                                     <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -303,7 +305,8 @@ max-h-[400px] overflow-y-auto z-50'>
                             <a href="">
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
-                                        <p>📚</p>
+                                    <MapIcon className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
+
                                         <p className='font-bold  text-2xl'>State Regs</p>
                                     </div>
                                     <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
