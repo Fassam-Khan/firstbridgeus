@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '@/component/Header'
 import { getBlogs } from "@/lib/getBlogs"
+import Image from 'next/image'
 
 
 import {
@@ -123,8 +124,8 @@ const page = async () => {
                             {/* Card  */}
                             <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                 <div className='flex gap-2 items-center  '>
-                                    <p>📚</p>
-                                    <p className='font-bold  text-2xl'>Guides</p>
+                                    <Image src={'/book.svg'} width={30} height={30} alt='book' className='text-[var(--primary-color)]' />
+                                    <p className='font-bold  text-xl'>Guides</p>
                                 </div>
 
                                 <span className='bg-[var(--primary-color)] !p-2 rounded-full w-5 h-5 flex justify-center items-center text-white'>10</span>
@@ -148,21 +149,47 @@ max-h-[400px] overflow-y-auto z-50'>
 
                                     <div className='flex gap-4 justify-between !px-2 !mt-1  gap-2'>
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                        <Link href={'/resources/how-to-start-a-truck-dispatching-business-in-2026'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>How to start a trucking company</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        </a>
+                                        </Link>
+
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                        <Link href={'/resources/how-to-get-loads-with-new-mc-authority'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>02</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>Get Loads with New MC Authority</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        </a>
+                                        </Link>
+
+                                    </div>
+                                    {/* Row  */}
+
+                                    <div className='flex gap-4 justify-between !px-2 !mt-1 '>
+                                        {/* Card  */}
+                                        <Link href={'/resources/trucking-cost-per-mile-guide'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>03</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>Trucking Cost Per Mile Guide</p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        {/* Card  */}
+                                        <Link href={'/resources/average-trucking-rate-per-mile'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>04</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>Average Trucking Rate Per Mile</p>
+                                                </div>
+                                            </div>
+                                        </Link>
 
                                     </div>
                                     {/* Row  */}
@@ -170,83 +197,65 @@ max-h-[400px] overflow-y-auto z-50'>
                                     <div className='flex gap-4 justify-between !px-2 !mt-1 '>
                                         {/* Card  */}
                                         <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>05</p>
                                             <div className='md:w-[150px]'>
                                                 <p>How to start a trucking company</p>
                                             </div>
                                         </div>
                                         </a>
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
+                                        <Link href={'/resources/how-dispatch-services-work'}><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>06</p>
                                             <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                                <p>How Dispatch Services Work</p>
                                             </div>
                                         </div>
-                                        </a>
+                                        </Link>
 
                                     </div>
                                     {/* Row  */}
 
                                     <div className='flex gap-4 justify-between !px-2 !mt-1 '>
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                        <Link href={'/resources/best-load-boards-for-owner-operators'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>07</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>Best Load Boards for Owner Operators</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        </a>
+                                        </Link>
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                        <Link href={'/resources/how-to-reduce-deadhead-miles'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>08</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>How to Reduce Deadhead Miles </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        </a>
-
+                                        </Link>
                                     </div>
                                     {/* Row  */}
 
                                     <div className='flex gap-4 justify-between !px-2 !mt-1 '>
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                        <Link href={'/resources/trucking-cost-per-mile-guide'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>09</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>Trucking Profit Per Load Guide</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        </a>
+                                        </Link>
                                         {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
+                                        <Link href={'/resources/owner-operator-vs-company-driver'}>
+                                            <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
+                                                <p className='Orbitron text-[var(--primary-color)] font-bold'>10</p>
+                                                <div className='md:w-[150px]'>
+                                                    <p>Owner Operator vs Company Driver</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        </a>
-
-                                    </div>
-                                    {/* Row  */}
-
-                                    <div className='flex gap-4 justify-between !px-2 !mt-1 '>
-                                        {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
-                                            </div>
-                                        </div>
-                                        </a>
-                                        {/* Card  */}
-                                        <a href=""><div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
-                                            <p className='Orbitron text-[var(--primary-color)] font-bold'>01</p>
-                                            <div className='md:w-[150px]'>
-                                                <p>How to start a trucking company</p>
-                                            </div>
-                                        </div>
-                                        </a>
+                                        </Link>
 
                                     </div>
 
@@ -256,8 +265,8 @@ max-h-[400px] overflow-y-auto z-50'>
                             <a href="">
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
-                                        <p>📚</p>
-                                        <p className='font-bold  text-2xl'>Market Updates</p>
+                                        <Image src={'/market.svg'} width={30} height={30} alt='market' />
+                                        <p className='font-bold  text-xl'>Market Updates</p>
                                     </div>
                                     <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
@@ -322,28 +331,28 @@ max-h-[400px] overflow-y-auto z-50'>
 
                         {/* card  */}
                         <Link href={'/resources/how-to-start-a-truck-dispatching-business-in-2026'}>
-                        <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
-                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>01 Start a Trucking Company</p>
-                        </div>
+                            <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                                <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>01 Start a Trucking Company</p>
+                            </div>
                         </Link>
                         {/* card  */}
                         <Link href={'/resources/how-to-get-loads-with-new-mc-authority'}>
-                        <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
-                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>02 Get Loads with New MC </p>
-                        </div>
+                            <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                                <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>02 Get Loads with New MC </p>
+                            </div>
                         </Link>
-                        
+
                         {/* card  */}
-                        <Link href={'/resources'}>
-                        <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
-                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>03 Cost Per Mile Guide </p>
-                        </div>
+                        <Link href={'/resources/how-to-calculate-trucking-profit-per-load'}>
+                            <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                                <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>03 Cost Per Mile Guide </p>
+                            </div>
                         </Link>
                         {/* card  */}
-                        <Link href={'/resources'}>
-                        <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
-                            <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>04 Average Rate Per Mile </p>
-                        </div>
+                        <Link href={'/resources/average-trucking-rate-per-mile'}>
+                            <div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                                <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>04 Average Rate Per Mile </p>
+                            </div>
                         </Link>
                         {/* card  */}
                         <Link href={'/resources'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
@@ -351,28 +360,28 @@ max-h-[400px] overflow-y-auto z-50'>
                         </div>
                         </Link>
                         {/* card  */}
-                        <Link href={'/'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                        <Link href={'/resources//how-dispatch-services-work'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                             <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>06 How Dispatch Work</p>
                         </div>
                         </Link>
-                       
+
                         {/* card  */}
-                        <Link href={'/'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                        <Link href={'/resources/best-load-boards-for-owner-operators'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                             <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>07 Best Load Boards</p>
                         </div>
                         </Link>
                         {/* card  */}
-                        <Link href={'/'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                        <Link href={'/resources/how-to-reduce-deadhead-miles'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                             <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>08 Reduce Deadhead Miles</p>
                         </div>
-                        </Link>                    
-                            {/* card  */}
-                        <Link href={'/'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                        </Link>
+                        {/* card  */}
+                        <Link href={'/resources/trucking-profit-per-load-guide'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                             <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>09 Profit Per Load</p>
                         </div>
                         </Link>
                         {/* card  */}
-                        <Link href={'/'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                        <Link href={'/resources/owner-operator-vs-company-driver'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                             <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>10 Owner Op Vs Campany Driver</p>
                         </div>
                         </Link>
