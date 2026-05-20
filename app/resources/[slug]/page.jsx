@@ -49,9 +49,9 @@ const decodeHTML = (html) => {
           <p>Loading...</p>
         )}
         <div className="wrapper  md:w-[850px] w-full !m-auto">
-          <Link href={'/'} className='text-[var(--primary-color)] font-semibold flex gap-2'>
+          <Link href={'/resources'} className='text-[var(--primary-color)] font-semibold flex gap-2'>
             <ArrowLeft className="w-5 h-5" />
-            Back to blog</Link>
+            Back To Resources Page</Link>
 
           <div className='!mt-6'>
             <h2 className='font-[Orbitron] md:text-4xl text-lg font-bold'>{blog?.title}</h2>
@@ -64,7 +64,7 @@ const decodeHTML = (html) => {
           </div>
           <Link href={'/resources'} className='text-[var(--primary-color)] !mt-6 font-semibold flex gap-2'>
             <ArrowLeft className="w-5 h-5" />
-            Back to All Articles</Link>
+            Back To Resources Page</Link>
         </div>
 
 

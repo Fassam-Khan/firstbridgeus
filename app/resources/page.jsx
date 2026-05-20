@@ -242,7 +242,7 @@ max-h-[400px] overflow-y-auto z-50'>
 
                                     <div className='flex gap-4 justify-between !px-2 !mt-1 '>
                                         {/* Card  */}
-                                        <Link href={'/resources/trucking-cost-per-mile-guide'}>
+                                        <Link href={'/resources/how-to-calculate-trucking-profit-per-load'}>
                                             <div className='flex  gap-2  hover:bg-[#ffa382b2] rounded !px-1 hover:border transition-all cursor-pointer hover:border-[var(--primary-color)] '>
                                                 <p className='Orbitron text-[var(--primary-color)] font-bold'>09</p>
                                                 <div className='md:w-[150px]'>
@@ -381,7 +381,7 @@ max-h-[400px] overflow-y-auto z-50'>
                         </div>
                         </Link>
                         {/* card  */}
-                        <Link href={'/resources/trucking-profit-per-load-guide'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
+                        <Link href={'/resources/how-to-calculate-trucking-profit-per-load'}><div className="group  hover:text-white transition-all hover:bg-[var(--primary-color)] rounded-full !py-1 !px-3 border border-gray-300 bg-[#f7f9fb] ">
                             <p className=' group-hover:text-white transition-all text-[#004e89] font-bold text-sm'>09 Profit Per Load</p>
                         </div>
                         </Link>
