@@ -44,7 +44,7 @@ const page = async () => {
                                         <div className='flex gap-2 items-center  '>
                                         <Image src={'/book.svg'} width={24} height={24} alt='book' className='text-[var(--primary-color)]' />
 
-                                            <p className='font-bold  text-2xl'>Guides</p>
+                                            <p className='font-bold  text-lg'>Guides</p>
                                         </div>
 
                                         <span className='bg-[var(--primary-color)] !p-2 rounded-full w-5 h-5 flex justify-center items-center text-white'>10</span>
@@ -60,7 +60,7 @@ const page = async () => {
                                             <div className='flex gap-2 items-center  '>
                                             <Image src={'/market.svg'} width={24} height={24} alt='market' />
 
-                                                <p className='font-bold  text-2xl'>Market Updates</p>
+                                                <p className='font-bold  text-lg'>Market Updates</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
@@ -74,7 +74,7 @@ const page = async () => {
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
                                                 <p>📚</p>
-                                                <p className='font-bold  text-2xl'>Glossary</p>
+                                                <p className='font-bold  text-lg'>Glossary</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
@@ -89,7 +89,7 @@ const page = async () => {
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
                                                 <p>📚</p>
-                                                <p className='font-bold  text-2xl'>Master FAQ</p>
+                                                <p className='font-bold  text-lg'>Master FAQ</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
 
