@@ -425,6 +425,21 @@ max-h-[400px] overflow-y-auto z-50'>
                 </div>
             </div>
 
+            {/* Market Section  */}
+            <div className='bg-[var(--secondary-color)] '>
+                <div className="wrapper">
+                    {/* Heading  */}
+                    <div className='flex flex-col gap-2 text-white'>
+                        <h1 className='md:text-4xl text-lg font-bold'>INDUSTRY  NEWS & MARKET UPDATES</h1>
+                        <p className='font-light'>Freight market conditions, diesel prices, and seasonal trends for owner operators</p>
+                        <div className='rounded-full  text-[12px] w-[200px] bg-[var(--primary-color)] font-[Orbitron] text-white py-1 px-2 '>
+                        📅 Q2 2026 Market Data
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 
 
         </div>
