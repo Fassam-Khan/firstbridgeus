@@ -484,8 +484,39 @@ max-h-[400px] overflow-y-auto z-50'>
 
                     </div>
 
+
+                    {/* Current Spot Rates  */}
+                    <div>
+                        {/* heading  */}
+                        <div className="flex justify-between flex-wrap mt-10">
+                            <p className='text-[#FFD23F] font-bold font-[Orbitron]'>
+                                📈 Current Spot Rate Ranges by Equipment
+                            </p>
+                            <p className='text-gray-500 font-[Orbitron] text-sm'>
+                                Last updated: May 2026
+                            </p>
+                        </div>
+
+                        {/* Table  */}
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td className='text-[#FFD23F] font-bold'>Equipment</td>
+                                    <td className='text-[#FFD23F] font-bold'>Low</td>
+                                    <td className='text-[#FFD23F] font-bold'>Average</td>
+                                    <td className='text-[#FFD23F] font-bold'>Hight</td>
+                                    <td className='text-[#FFD23F] font-bold'>Trend</td>
+                                    <td className='text-[#FFD23F] font-bold'>Best Lanes</td>
+                                    
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
                 </div>
             </div>
+
 
 
 
