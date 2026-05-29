@@ -426,7 +426,7 @@ max-h-[400px] overflow-y-auto z-50'>
             </div>
 
             {/* Market Section  */}
-            <div className='bg-[var(--secondary-color)] market py-6 '>
+            <div className='bg-[var(--secondary-color)] market py-6 before:content[""]  before:bg-[repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255, 107, 53, 0.03) 40px, rgba(255, 107, 53, 0.03) 80px)]'>
                 <div className="wrapper md:w-[1100px] m-auto ">
                     {/* Heading  */}
                     <div className='flex flex-col gap-2 text-white'>
@@ -498,56 +498,144 @@ max-h-[400px] overflow-y-auto z-50'>
                         </div>
 
                         {/* Table  */}
-                        <div className='overflow-auto shadow-2xl'>
+                        <div className='overflow-auto '>
 
-                        <table className='w-full shadow-2xl mt-6'>
-                            <thead className='bg-[#41222A] font-[Orbitron]'>
-                                <tr>
-                                    <td className='text-[#FFD23F] text-sm font-bold'>Equipment</td>
-                                    <td className='text-[#FFD23F] text-sm font-bold'>Low</td>
-                                    <td className='text-[#FFD23F] text-sm font-bold'>Average</td>
-                                    <td className='text-[#FFD23F] text-sm font-bold'>Hight</td>
-                                    <td className='text-[#FFD23F] text-sm font-bold'>Trend</td>
-                                    <td className='text-[#FFD23F] text-sm font-bold'>Best Lanes</td>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody className='text-white'>
-                                <tr className='border-b border-gray-800'>
-                                    <td>Dry Van 53'</td>
-                                    <td>$1.65/mi</td>
-                                    <td>$2.05/mi</td>
-                                    <td>$2.90/mi</td>
-                                    <td>▲ Stable</td>
-                                    <td>Chicago–Dallas, Atlanta–NJ</td>
-                                </tr>
-                                <tr className='border-b border-gray-800'>
-                                    <td>Dry Van 53'</td>
-                                    <td>$1.65/mi</td>
-                                    <td>$2.05/mi</td>
-                                    <td>$2.90/mi</td>
-                                    <td>▲ Stable</td>
-                                    <td>Chicago–Dallas, Atlanta–NJ</td>
-                                </tr>
-                                <tr className='border-b border-gray-800'>
-                                    <td>Dry Van 53'</td>
-                                    <td>$1.65/mi</td>
-                                    <td>$2.05/mi</td>
-                                    <td>$2.90/mi</td>
-                                    <td>▲ Stable</td>
-                                    <td>Chicago–Dallas, Atlanta–NJ</td>
-                                </tr>
-                                <tr className='border-b border-gray-800'>
-                                    <td>Dry Van 53'</td>
-                                    <td>$1.65/mi</td>
-                                    <td>$2.05/mi</td>
-                                    <td>$2.90/mi</td>
-                                    <td>▲ Stable</td>
-                                    <td>Chicago–Dallas, Atlanta–NJ</td>
-                                </tr>
+                            <table className='w-full shadow-2xl mt-6'>
+                                <thead className='bg-[#41222A] font-[Orbitron]'>
+                                    <tr>
+                                        <td className='text-[#FFD23F] text-sm font-bold'>Equipment</td>
+                                        <td className='text-[#FFD23F] text-sm font-bold'>Low</td>
+                                        <td className='text-[#FFD23F] text-sm font-bold'>Average</td>
+                                        <td className='text-[#FFD23F] text-sm font-bold'>Hight</td>
+                                        <td className='text-[#FFD23F] text-sm font-bold'>Trend</td>
+                                        <td className='text-[#FFD23F] text-sm font-bold'>Best Lanes</td>
 
-                            </tbody>
-                        </table>
+                                    </tr>
+                                </thead>
+                                <tbody className='text-white'>
+                                    <tr className='border-b border-gray-800'>
+                                        <td>Dry Van 53'</td>
+                                        <td>Reefer 53'</td>
+                                        <td>$2.10/mi</td>
+                                        <td>$3.80/mi</td>
+                                        <td>▲ Rising</td>
+                                        <td>FL–Midwest, TX–Northeast</td>
+                                    </tr>
+                                    <tr className='border-b border-gray-800'>
+                                        <td>Flatbed 48'/53'</td>
+                                        <td>$2.20/mi</td>
+                                        <td>$2.82/mi</td>
+                                        <td>$4.50/mi</td>
+                                        <td>▲ Strong</td>
+                                        <td>TX–Midwest, Southeast</td>
+                                    </tr>
+                                    <tr className='border-b border-gray-800'>
+                                        <td>Step Deck</td>
+                                        <td>$2.40/mi</td>
+                                        <td>$2.95/mi</td>
+                                        <td>$5.00/mi</td>
+                                        <td>▲ Strong</td>
+                                        <td>Southeast–Midwest</td>
+                                    </tr>
+                                    <tr className='border-b border-gray-800'>
+                                        <td>Power Only</td>
+                                        <td>$1.75/mi</td>
+                                        <td>$2.10/mi</td>
+                                        <td>$3.20/mi</td>
+                                        <td>— Flat</td>
+                                        <td>Retail corridors</td>
+                                    </tr>
+                                    <tr className='border-b border-gray-800'>
+                                        <td>Hotshot</td>
+                                        <td>$1.40/mi</td>
+                                        <td>$2.10/mi</td>
+                                        <td>$3.20/mi</td>
+                                        <td>— Flat</td>
+                                        <td>TX Permian, oilfield</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            {/* Card Section  */}
+                            <div className='grid md:grid-cols-3 grid-cols-1 gap-3 mt-6'>
+                                {/* Card  */}
+                                <div className='border-l-3 border-[var(--primary-color)] bg-[rgba(255,107,53,0.1)] p-4 ' >
+                                    <p className='text-white font-bold'>
+                                        🌱 Produce Season (Apr–Jun): <span className='font-light'>Reefer rates spike 20–40%. Position in FL or TX before April to capitalize on northbound freight surge.</span>
+                                    </p>
+                                </div>
+                                {/* Card  */}
+                                <div className='border-l-3 border-[var(--primary-color)] bg-[rgba(255,107,53,0.1)] p-4 ' >
+                                    <p className='text-white font-bold'>
+                                        🏗️ Construction Surge (Mar–Oct): <span className='font-light'>Flatbed demand peaks spring through fall. Building materials, steel coil, and machinery drive premium rates.</span>
+                                    </p>
+                                </div>
+                                {/* Card  */}
+                                <div className='border-l-3 border-[var(--primary-color)] bg-[rgba(255,107,53,0.1)] p-4 ' >
+                                    <p className='text-white font-bold'>
+                                        🛍️ Peak Season (Oct–Nov):  <span className='font-light'>All equipment types see rate increases ahead of holiday retail. Dry van strongest — book loads 2–3 weeks ahead.</span>
+                                    </p>
+                                </div>
+                                {/* Card  */}
+                                <div className='border-l-3 border-[var(--primary-color)] bg-[rgba(255,107,53,0.1)] p-4 ' >
+                                    <p className='text-white font-bold'>
+                                        ❄️ Winter Slowdown (Jan–Feb):  <span className='font-light'>Spot rates historically weakest. Focus on contract lanes or use dispatch service to secure consistent freight.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Glossary Section  */}
+            <div className='bg-[#F7F9FB]'>
+                <div className='wrapper md:w-[1100px] m-auto'>
+
+                    {/* Heading  */}
+                    <div>
+                        <h2 className='font-bold text-4xl'>TRUCKING GLOSSARY & TERMINOLOGY</h2>
+                        <p className='mt-3'>Essential terms every owner operator and new carrier needs to know</p>
+                    </div>
+
+                    {/* Links  */}
+                    <div className='mt-6 flex gap-3 flex-wrap'>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>A</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>B</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>C</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>D</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>E</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>F</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>H</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>I</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>L</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>M</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>O</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>P</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>R</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>S</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>T</Link>
+                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>U</Link>
+
+
+                    </div>
+
+                    {/* Link Section  */}
+                    <div>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>A</div>
+                        <div className= 'grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--secondary-color)]'>Accessorial Charges</h4>
+                                <p className='font-light'>Extra fees beyond the base freight rate — such as detention, layover, lumper, fuel surcharge, or hazmat. Always confirm which accessorials are covered before accepting a load.</p>
+                            </div>
+                                {/* Card  */}
+                                <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--secondary-color)]'>Accessorial Charges</h4>
+                                <p className='font-light'>Extra fees beyond the base freight rate — such as detention, layover, lumper, fuel surcharge, or hazmat. Always confirm which accessorials are covered before accepting a load.</p>
+                            </div>
                         </div>
                     </div>
 
