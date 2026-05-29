@@ -628,12 +628,12 @@ max-h-[400px] overflow-y-auto z-50'>
                         <div className= 'grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
                             {/* Card  */}
                             <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
-                                <h4 className='font-[Orbitron] font-bold text-[var(--secondary-color)]'>Accessorial Charges</h4>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Accessorial Charges</h4>
                                 <p className='font-light'>Extra fees beyond the base freight rate — such as detention, layover, lumper, fuel surcharge, or hazmat. Always confirm which accessorials are covered before accepting a load.</p>
                             </div>
                                 {/* Card  */}
                                 <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
-                                <h4 className='font-[Orbitron] font-bold text-[var(--secondary-color)]'>Accessorial Charges</h4>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Accessorial Charges</h4>
                                 <p className='font-light'>Extra fees beyond the base freight rate — such as detention, layover, lumper, fuel surcharge, or hazmat. Always confirm which accessorials are covered before accepting a load.</p>
                             </div>
                         </div>
