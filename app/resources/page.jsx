@@ -498,20 +498,57 @@ max-h-[400px] overflow-y-auto z-50'>
                         </div>
 
                         {/* Table  */}
+                        <div className='overflow-auto shadow-2xl'>
 
-                        <table>
-                            <thead>
+                        <table className='w-full shadow-2xl mt-6'>
+                            <thead className='bg-[#41222A] font-[Orbitron]'>
                                 <tr>
-                                    <td className='text-[#FFD23F] font-bold'>Equipment</td>
-                                    <td className='text-[#FFD23F] font-bold'>Low</td>
-                                    <td className='text-[#FFD23F] font-bold'>Average</td>
-                                    <td className='text-[#FFD23F] font-bold'>Hight</td>
-                                    <td className='text-[#FFD23F] font-bold'>Trend</td>
-                                    <td className='text-[#FFD23F] font-bold'>Best Lanes</td>
+                                    <td className='text-[#FFD23F] text-sm font-bold'>Equipment</td>
+                                    <td className='text-[#FFD23F] text-sm font-bold'>Low</td>
+                                    <td className='text-[#FFD23F] text-sm font-bold'>Average</td>
+                                    <td className='text-[#FFD23F] text-sm font-bold'>Hight</td>
+                                    <td className='text-[#FFD23F] text-sm font-bold'>Trend</td>
+                                    <td className='text-[#FFD23F] text-sm font-bold'>Best Lanes</td>
                                     
                                 </tr>
                             </thead>
+                            <tbody className='text-white'>
+                                <tr className='border-b border-gray-800'>
+                                    <td>Dry Van 53'</td>
+                                    <td>$1.65/mi</td>
+                                    <td>$2.05/mi</td>
+                                    <td>$2.90/mi</td>
+                                    <td>▲ Stable</td>
+                                    <td>Chicago–Dallas, Atlanta–NJ</td>
+                                </tr>
+                                <tr className='border-b border-gray-800'>
+                                    <td>Dry Van 53'</td>
+                                    <td>$1.65/mi</td>
+                                    <td>$2.05/mi</td>
+                                    <td>$2.90/mi</td>
+                                    <td>▲ Stable</td>
+                                    <td>Chicago–Dallas, Atlanta–NJ</td>
+                                </tr>
+                                <tr className='border-b border-gray-800'>
+                                    <td>Dry Van 53'</td>
+                                    <td>$1.65/mi</td>
+                                    <td>$2.05/mi</td>
+                                    <td>$2.90/mi</td>
+                                    <td>▲ Stable</td>
+                                    <td>Chicago–Dallas, Atlanta–NJ</td>
+                                </tr>
+                                <tr className='border-b border-gray-800'>
+                                    <td>Dry Van 53'</td>
+                                    <td>$1.65/mi</td>
+                                    <td>$2.05/mi</td>
+                                    <td>$2.90/mi</td>
+                                    <td>▲ Stable</td>
+                                    <td>Chicago–Dallas, Atlanta–NJ</td>
+                                </tr>
+
+                            </tbody>
                         </table>
+                        </div>
                     </div>
 
                 </div>
