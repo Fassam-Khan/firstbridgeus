@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '@/component/Header'
 import { getBlogs } from "@/lib/getBlogs"
 import Image from 'next/image'
-import { GraduationCap, BadgeQuestionMark,  MapIcon } from 'lucide-react'
+import { GraduationCap, BadgeQuestionMark, MapIcon } from 'lucide-react'
 
 
 import {
@@ -43,7 +43,7 @@ const page = async () => {
                                     {/* Card  */}
                                     <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                         <div className='flex gap-2 items-center  '>
-                                        <Image src={'/book.svg'} width={24} height={24} alt='book' className='text-[var(--primary-color)]' />
+                                            <Image src={'/book.svg'} width={24} height={24} alt='book' className='text-[var(--primary-color)]' />
 
                                             <p className='font-bold  text-lg'>Guides</p>
                                         </div>
@@ -59,7 +59,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                            <Image src={'/market.svg'} width={24} height={24} alt='market' />
+                                                <Image src={'/market.svg'} width={24} height={24} alt='market' />
 
                                                 <p className='font-bold  text-lg'>Market Updates</p>
                                             </div>
@@ -74,7 +74,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <GraduationCap className='text-[var(--primary-color)]'/>
+                                                <GraduationCap className='text-[var(--primary-color)]' />
                                                 <p className='font-bold  text-lg'>Glossary</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -89,7 +89,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <BadgeQuestionMark className='text-[var(--primary-color)]'/>
+                                                <BadgeQuestionMark className='text-[var(--primary-color)]' />
                                                 <p className='font-bold  text-lg'>Master FAQ</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -104,7 +104,7 @@ const page = async () => {
                                     <a href="">
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
-                                                <MapIcon className='text-[var(--primary-color)]'/>
+                                                <MapIcon className='text-[var(--primary-color)]' />
                                                 <p className='font-bold  text-lg'>State Regs</p>
                                             </div>
                                             <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -280,7 +280,7 @@ max-h-[400px] overflow-y-auto z-50'>
                             <a href="">
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
-                                    <GraduationCap className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
+                                        <GraduationCap className='text-[var(--primary-color)] w-[30px] h-[30px]' />
 
                                         <p className='font-bold  text-xl'>Glossary</p>
                                     </div>
@@ -293,7 +293,7 @@ max-h-[400px] overflow-y-auto z-50'>
                             <a href="">
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
-                                    <BadgeQuestionMark className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
+                                        <BadgeQuestionMark className='text-[var(--primary-color)] w-[30px] h-[30px]' />
                                         <p className='font-bold  text-xl'>Master FAQ</p>
                                     </div>
                                     <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
@@ -305,7 +305,7 @@ max-h-[400px] overflow-y-auto z-50'>
                             <a href="">
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
-                                    <MapIcon className='text-[var(--primary-color)] w-[30px] h-[30px]'/>
+                                        <MapIcon className='text-[var(--primary-color)] w-[30px] h-[30px]' />
 
                                         <p className='font-bold  text-xl'>State Regs</p>
                                     </div>
@@ -426,15 +426,62 @@ max-h-[400px] overflow-y-auto z-50'>
             </div>
 
             {/* Market Section  */}
-            <div className='bg-[var(--secondary-color)] '>
-                <div className="wrapper">
+            <div className='bg-[var(--secondary-color)] market py-6 '>
+                <div className="wrapper md:w-[1100px] m-auto ">
                     {/* Heading  */}
                     <div className='flex flex-col gap-2 text-white'>
                         <h1 className='md:text-4xl text-lg font-bold'>INDUSTRY  NEWS & MARKET UPDATES</h1>
                         <p className='font-light'>Freight market conditions, diesel prices, and seasonal trends for owner operators</p>
                         <div className='rounded-full  text-[12px] w-[200px] bg-[var(--primary-color)] font-[Orbitron] text-white py-1 px-2 '>
-                        📅 Q2 2026 Market Data
+                            📅 Q2 2026 Market Data
                         </div>
+                    </div>
+
+                    {/* Card Container  */}
+                    <div className="grid md:grid-cols-3  grid-cols-1 gap-2 mt-6">
+                        {/* Card  */}
+                        <div className=" hover:border-[var(--primary-color)] transition-all p-4 border border-gray-700 shadow flex flex-col gap-3 rounded">
+                            <p className="text-2xl">⛽</p>
+                            <p className='font-[Orbitron] text-sm font-bold text-[#FFD23A]'>National Avg Diesel Price</p>
+                            <p className='text-[#FFD23A] text-3xl font-bold'>$3.78/gal</p>
+                            <p className='font-light text-white '>Down from Q4 2025 highs. Midwest and Gulf Coast remain lowest. California continues 40–60¢ premium. Use fuel cards for additional savings of $0.10–$0.40/gal.</p>
+                        </div>
+                        {/* Card  */}
+                        <div className=" hover:border-[var(--primary-color)] transition-all p-4 border border-gray-700 shadow flex flex-col gap-3 rounded">
+                            <p className="text-2xl">📦</p>
+                            <p className='font-[Orbitron] text-sm font-bold text-[#FFD23A]'>Dry Van Spot Market</p>
+                            <p className='text-[#FFD23A] text-3xl font-bold'>$2.05/mi</p>
+                            <p className='font-light text-white '>National average inclusive of fuel surcharge. Southeast and Midwest corridors showing strongest demand. Avoid Northeast backhauls — historically low-paying in Q1.</p>
+                        </div>
+                        {/* Card  */}
+                        <div className=" hover:border-[var(--primary-color)] transition-all p-4 border border-gray-700 shadow flex flex-col gap-3 rounded">
+                            <p className="text-2xl">❄️</p>
+                            <p className='font-[Orbitron] text-sm font-bold text-[#FFD23A]'>Reefer Spot Market</p>
+                            <p className='text-[#FFD23A] text-3xl font-bold'>$2.68/mi</p>
+                            <p className='font-light text-white '>Pre-produce season positioning underway. Reefer demand picking up from Florida and Texas heading north. Rates expected to climb through April–June peak produce season.</p>
+                        </div>
+                        {/* Card  */}
+                        <div className=" hover:border-[var(--primary-color)] transition-all p-4 border border-gray-700 shadow flex flex-col gap-3 rounded">
+                            <p className="text-2xl">🏗️</p>
+                            <p className='font-[Orbitron] text-sm font-bold text-[#FFD23A]'>Flatbed & Step Deck</p>
+                            <p className='text-[#FFD23A] text-3xl font-bold'>$2.82/mi</p>
+                            <p className='font-light text-white '>Construction season acceleration driving strong flatbed demand. Steel, lumber, and building materials freight up. Best rates in Texas–Midwest–Southeast triangle lanes.</p>
+                        </div>
+                        {/* Card  */}
+                        <div className=" hover:border-[var(--primary-color)] transition-all p-4 border border-gray-700 shadow flex flex-col gap-3 rounded">
+                            <p className="text-2xl">🔥</p>
+                            <p className='font-[Orbitron] text-sm font-bold text-[#FFD23A]'>Hotshot & Power Only</p>
+                            <p className='text-[#FFD23A] text-3xl font-bold'>$2.10/mi</p>
+                            <p className='font-light text-white '>Hotshot market steady. Power only demand driven by retailer restocking cycles. Oilfield hotshot remains strongest niche — Texas Permian Basin paying premium rates.</p>
+                        </div>
+                        {/* Card  */}
+                        <div className=" hover:border-[var(--primary-color)] transition-all p-4 border border-gray-700 shadow flex flex-col gap-3 rounded">
+                            <p className="text-2xl">📊</p>
+                            <p className='font-[Orbitron] text-sm font-bold text-[#FFD23A]'>Market Sentiment</p>
+                            <p className='text-[#FFD23A] text-3xl font-bold'>CAUTIOUS OPTIMISM</p>
+                            <p className='font-light text-white '>Load-to-truck ratio improving YoY. Rate softness in spot market continues but showing gradual recovery. Carriers with broker relationships outperforming pure spot market operators.</p>
+                        </div>
+
                     </div>
 
                 </div>

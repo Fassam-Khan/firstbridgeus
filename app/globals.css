@@ -6,43 +6,43 @@
 @import "shadcn/tailwind.css";
 
 
-*{
-  
+* {
+
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --primary-color: #f56633;
-  --secondary-color : #0d132c;
-  --primary-text: ""
-
-;
+  --secondary-color: #0d132c;
 }
-  
+
 
 body {
   font-family: "Rajdhani", sans-serif;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1500px;
   margin: auto;
   padding: 20px;
 }
-button{
+
+button {
   font-family: "Rajdhani", sans-serif;
 
 
 }
-a{
+
+a {
   font-family: "Rajdhani", sans-serif;
 
 }
-/* From Uiverse.io by dylanharriscameron */ 
+
+/* From Uiverse.io by dylanharriscameron */
 
 
 
-/* From Uiverse.io by dylanharriscameron */ 
+/* From Uiverse.io by dylanharriscameron */
 .card {
   position: relative;
   width: 160px;
@@ -56,7 +56,7 @@ a{
   justify-content: center;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   ;
-  
+
 }
 
 .bg {
@@ -110,67 +110,125 @@ a{
 }
 
 @media (min-width: 769px) {
-  .card{
-    width:290px;
-    height:300px
+  .card {
+    width: 290px;
+    height: 300px
   }
-.bg{
+
+  .bg {
     width: 280px;
-    height:300px
+    height: 300px
+  }
 
+  .blog table {
+    width: min-content;
+  }
 
 }
-.blog table {
-  width: min-content;
-}
 
-}
 html {
   overflow-y: scroll;
 }
+
 .ProseMirror {
   min-height: 400px;
   padding: 12px;
   outline: none;
 }
-/* Tiptap editor styles */
-.tiptap p { margin: 0.5rem 0; }
-.tiptap h1 { font-size: 2rem; font-weight: bold; }
-.tiptap h2 { font-size: 1.5rem; font-weight: bold; }
-.tiptap h3 { font-size: 1.25rem; font-weight: bold; }
-.tiptap ul { list-style: disc; padding-left: 1.5rem; }
-.tiptap ol { list-style: decimal; padding-left: 1.5rem; }
-.tiptap blockquote { border-left: 3px solid #ccc; padding-left: 1rem; color: #666; }
-.tiptap code { background: #f4f4f4; padding: 0.2rem 0.4rem; border-radius: 4px; }
-.tiptap pre { background: #1e1e1e; color: #fff; padding: 1rem; border-radius: 8px; }
-.tiptap a { color: blue; text-decoration: underline; }
-.tiptap hr { border: 1px solid #ddd; margin: 1rem 0; }
 
-.blog h2{
-  font-weight:bold;
-  font-family: "Orbitron",Arial;
-  color:#004e89;
-  margin-top:6px;
+/* Tiptap editor styles */
+.tiptap p {
+  margin: 0.5rem 0;
+}
+
+.tiptap h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tiptap h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tiptap h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.tiptap ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.tiptap ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.tiptap blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 1rem;
+  color: #666;
+}
+
+.tiptap code {
+  background: #f4f4f4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.tiptap pre {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tiptap a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.tiptap hr {
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+.blog h2 {
+  font-weight: bold;
+  font-family: "Orbitron", Arial;
+  color: #004e89;
+  margin-top: 6px;
   font-size: 24px;
   margin-bottom: 6px;
 }
-.blog h3,h4,h5,h6{
-  font-weight:bold;
+
+.blog h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
-.blog ul{
+
+.blog ul {
   list-style: disc;
   padding-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.blog  th, table td {
-  padding: 15px; /* Adds 15px of space inside every cell */
+
+.blog th,
+table td {
+  padding: 15px;
+  /* Adds 15px of space inside every cell */
   text-align: left;
 }
-.blog table{
+
+.blog table {
   border: 2px solid var(--primary-color);
-  background-color:white; 
+  background-color: white;
   width: 100%;
   border-collapse: collapse;
   border-radius: 8px;
@@ -178,9 +236,9 @@ html {
 }
 
 .blog {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 
 
@@ -243,12 +301,18 @@ html {
 .resize-cursor {
   cursor: col-resize;
 }
-.tiptap p{
+
+.tiptap p {
   color: black;
 }
 
-.resourceHero{
+.resourceHero {
   background-color: #0A0E27;
-  width:100%;
-  background: repeating-linear-gradient(90deg,transparent,transparent 2px,rgba(255,255,255,0.03) 2px,rgba(255,255,255,0.03) 4px);
+  width: 100%;
+  background: repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px);
 }
+
+.market::before {
+  content: '';
+  inset: 0;
+background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255, 107, 53, 0.03) 40px, rgba(255, 107, 53, 0.03) 80px)}
