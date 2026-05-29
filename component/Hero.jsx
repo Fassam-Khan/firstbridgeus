@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel"
 import Image from 'next/image'
 const Hero = () => {
-  const plugin = React.useRef(Autoplay({ delay: 3000 }))
+  const plugin = React.useRef(Autoplay({ delay: 3000 , stopOnInteraction: true }))
   return (
     <div className='w-[100%]  overflow-hidden  border-b-3 border-[var(--primary-color)] '>
       <Carousel className="w-full relative  " plugins={[plugin.current]} opts={{ loop: true }} >
