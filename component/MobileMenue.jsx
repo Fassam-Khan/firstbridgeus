@@ -24,7 +24,7 @@ export function MobileMenue() {
         <Button variant=""><Menu className="text-white text-4xl"/></Button>
       </DrawerTrigger>
       <DrawerTitle></DrawerTitle>
-      <DrawerContent className='  mt-[10px] border-l-4 border-[var(--primary-color)] bg-[var(--secondary-color)]'>
+      <DrawerContent onCloseAutoFocus={(e)=> e.preventDefault()} className='  mt-[10px] border-l-4 border-[var(--primary-color)] bg-[var(--secondary-color)]'>
      
           <DrawerClose className="!mt-6 flex justify-end !px-8" >
             <X className="text-white "/>
