@@ -3,6 +3,7 @@ import Header from '@/component/Header'
 import { getBlogs } from "@/lib/getBlogs"
 import Image from 'next/image'
 import { GraduationCap, BadgeQuestionMark, MapIcon } from 'lucide-react'
+import Faq from '@/component/Faq'
 
 
 import {
@@ -12,6 +13,7 @@ import {
 } from "@/components/ui/carousel"
 import BlogsPage from '@/component/GettAllBlog'
 import Link from 'next/link'
+import Footer from '@/component/Footer'
 const page = async () => {
 
     const blogs = await getBlogs();
@@ -625,7 +627,7 @@ max-h-[400px] overflow-y-auto z-50'>
                     </div>
 
                     {/* Link Section  */}
-            
+
                     <div id='gloss-a'>
                         <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>A</div>
                         <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
@@ -855,7 +857,7 @@ max-h-[400px] overflow-y-auto z-50'>
 
                         </div>
                     </div>
-               
+
                     {/* Link Section  */}
                     <div id='gloss-p'>
                         <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>P</div>
@@ -963,6 +965,16 @@ max-h-[400px] overflow-y-auto z-50'>
 
                 </div>
             </div>
+
+            {/* Faq Section  */}
+            <Faq />
+
+
+            {/* Footer */}
+
+            <Footer/>
+
+
 
 
 
