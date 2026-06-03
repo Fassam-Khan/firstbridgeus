@@ -498,64 +498,66 @@ max-h-[400px] overflow-y-auto z-50'>
                         </div>
 
                         {/* Table  */}
-                        <div className='overflow-auto '>
+                        <div>
+                            <div className='overflow-auto '>
 
-                            <table className='w-full shadow-2xl mt-6'>
-                                <thead className='bg-[#41222A] font-[Orbitron]'>
-                                    <tr>
-                                        <td className='text-[#FFD23F] text-sm font-bold'>Equipment</td>
-                                        <td className='text-[#FFD23F] text-sm font-bold'>Low</td>
-                                        <td className='text-[#FFD23F] text-sm font-bold'>Average</td>
-                                        <td className='text-[#FFD23F] text-sm font-bold'>Hight</td>
-                                        <td className='text-[#FFD23F] text-sm font-bold'>Trend</td>
-                                        <td className='text-[#FFD23F] text-sm font-bold'>Best Lanes</td>
+                                <table className='w-full shadow-2xl mt-6'>
+                                    <thead className='bg-[#41222A] font-[Orbitron]'>
+                                        <tr>
+                                            <td className='text-[#FFD23F] text-sm font-bold'>Equipment</td>
+                                            <td className='text-[#FFD23F] text-sm font-bold'>Low</td>
+                                            <td className='text-[#FFD23F] text-sm font-bold'>Average</td>
+                                            <td className='text-[#FFD23F] text-sm font-bold'>Hight</td>
+                                            <td className='text-[#FFD23F] text-sm font-bold'>Trend</td>
+                                            <td className='text-[#FFD23F] text-sm font-bold'>Best Lanes</td>
 
-                                    </tr>
-                                </thead>
-                                <tbody className='text-white'>
-                                    <tr className='border-b border-gray-800'>
-                                        <td>Dry Van 53'</td>
-                                        <td>Reefer 53'</td>
-                                        <td>$2.10/mi</td>
-                                        <td>$3.80/mi</td>
-                                        <td>▲ Rising</td>
-                                        <td>FL–Midwest, TX–Northeast</td>
-                                    </tr>
-                                    <tr className='border-b border-gray-800'>
-                                        <td>Flatbed 48'/53'</td>
-                                        <td>$2.20/mi</td>
-                                        <td>$2.82/mi</td>
-                                        <td>$4.50/mi</td>
-                                        <td>▲ Strong</td>
-                                        <td>TX–Midwest, Southeast</td>
-                                    </tr>
-                                    <tr className='border-b border-gray-800'>
-                                        <td>Step Deck</td>
-                                        <td>$2.40/mi</td>
-                                        <td>$2.95/mi</td>
-                                        <td>$5.00/mi</td>
-                                        <td>▲ Strong</td>
-                                        <td>Southeast–Midwest</td>
-                                    </tr>
-                                    <tr className='border-b border-gray-800'>
-                                        <td>Power Only</td>
-                                        <td>$1.75/mi</td>
-                                        <td>$2.10/mi</td>
-                                        <td>$3.20/mi</td>
-                                        <td>— Flat</td>
-                                        <td>Retail corridors</td>
-                                    </tr>
-                                    <tr className='border-b border-gray-800'>
-                                        <td>Hotshot</td>
-                                        <td>$1.40/mi</td>
-                                        <td>$2.10/mi</td>
-                                        <td>$3.20/mi</td>
-                                        <td>— Flat</td>
-                                        <td>TX Permian, oilfield</td>
-                                    </tr>
+                                        </tr>
+                                    </thead>
+                                    <tbody className='text-white'>
+                                        <tr className='border-b border-gray-800'>
+                                            <td>Dry Van 53'</td>
+                                            <td>Reefer 53'</td>
+                                            <td>$2.10/mi</td>
+                                            <td>$3.80/mi</td>
+                                            <td>▲ Rising</td>
+                                            <td>FL–Midwest, TX–Northeast</td>
+                                        </tr>
+                                        <tr className='border-b border-gray-800'>
+                                            <td>Flatbed 48'/53'</td>
+                                            <td>$2.20/mi</td>
+                                            <td>$2.82/mi</td>
+                                            <td>$4.50/mi</td>
+                                            <td>▲ Strong</td>
+                                            <td>TX–Midwest, Southeast</td>
+                                        </tr>
+                                        <tr className='border-b border-gray-800'>
+                                            <td>Step Deck</td>
+                                            <td>$2.40/mi</td>
+                                            <td>$2.95/mi</td>
+                                            <td>$5.00/mi</td>
+                                            <td>▲ Strong</td>
+                                            <td>Southeast–Midwest</td>
+                                        </tr>
+                                        <tr className='border-b border-gray-800'>
+                                            <td>Power Only</td>
+                                            <td>$1.75/mi</td>
+                                            <td>$2.10/mi</td>
+                                            <td>$3.20/mi</td>
+                                            <td>— Flat</td>
+                                            <td>Retail corridors</td>
+                                        </tr>
+                                        <tr className='border-b border-gray-800'>
+                                            <td>Hotshot</td>
+                                            <td>$1.40/mi</td>
+                                            <td>$2.10/mi</td>
+                                            <td>$3.20/mi</td>
+                                            <td>— Flat</td>
+                                            <td>TX Permian, oilfield</td>
+                                        </tr>
 
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
 
                             {/* Card Section  */}
                             <div className='grid md:grid-cols-3 grid-cols-1 gap-3 mt-6'>
@@ -625,16 +627,42 @@ max-h-[400px] overflow-y-auto z-50'>
                     {/* Link Section  */}
                     <div>
                         <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>A</div>
-                        <div className= 'grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
                             {/* Card  */}
                             <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
                                 <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Accessorial Charges</h4>
                                 <p className='font-light'>Extra fees beyond the base freight rate — such as detention, layover, lumper, fuel surcharge, or hazmat. Always confirm which accessorials are covered before accepting a load.</p>
                             </div>
-                                {/* Card  */}
-                                <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
-                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Accessorial Charges</h4>
-                                <p className='font-light'>Extra fees beyond the base freight rate — such as detention, layover, lumper, fuel surcharge, or hazmat. Always confirm which accessorials are covered before accepting a load.</p>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Authority (MC Authority)</h4>
+                                <p className='font-light'>The FMCSA-issued operating authority that legally allows a carrier to transport freight for hire in interstate commerce. Required before booking any brokered load.</p>
+                            </div>
+                        </div>
+                    </div>
+                       {/* Link Section  */}
+                       <div>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>B</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Bill of Lading (BOL)</h4>
+                                <p className='font-light'>The legal document between shipper and carrier that lists freight details, pickup/delivery info, and terms. Always get a signed BOL at pickup and delivery — it protects you in disputes.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>BOC-3</h4>
+                                <p className='font-light'>A federal filing that designates a process agent in each state where you operate. Required by FMCSA before your authority activates. Usually filed by your BOC-3 service provider for ~$30.</p>
+                            </div>
+                               {/* Card  */}
+                               <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Authority (MC Authority)</h4>
+                                <p className='font-light'>The FMCSA-issued operating authority that legally allows a carrier to transport freight for hire in interstate commerce. Required before booking any brokered load.</p>
+                            </div>
+                               {/* Card  */}
+                               <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Authority (MC Authority)</h4>
+                                <p className='font-light'>The FMCSA-issued operating authority that legally allows a carrier to transport freight for hire in interstate commerce. Required before booking any brokered load.</p>
                             </div>
                         </div>
                     </div>
