@@ -1,7 +1,5 @@
 // app/api/chat/route.js
 import { google } from '@ai-sdk/google';
-import { streamText } from 'ai';
-
 // Allows streaming responses up to 30 seconds
 export const maxDuration = 30;
 
