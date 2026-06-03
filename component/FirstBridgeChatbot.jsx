@@ -1,53 +1,6 @@
 "use client"
 import { useState, useRef, useEffect } from "react"
 
-const SYSTEM_PROMPT = `You are the AI assistant for First Bridge Dispatch Services — a professional truck dispatch company serving owner-operators and fleets across all 48 states of the USA.
-
-Your job is to help truckers, owner-operators, and fleet owners learn about First Bridge's services, answer their questions, and guide them toward getting started.
-
-## About First Bridge Dispatch Services
-- Professional truck dispatching company available 24/7
-- Serves all 48 continental states
-- Contact: info@firstbridgedispatch.com
-- Stats: 500+ active drivers, 98% customer satisfaction, $2.5M+ revenue per month generated for drivers
-
-## Services Offered
-1. **Load Finding** – Access to premium load boards and direct shipper relationships. Negotiate the best rates and find consistent, profitable loads.
-2. **Route Planning** – Optimized routing that maximizes revenue per mile, reduces deadhead miles.
-3. **Broker Relations** – Professional communication with brokers and shippers. Handle negotiations, confirmations, follow-ups.
-4. **Billing & Invoicing** – Accurate invoicing and fast payment tracking. Ensure timely payments with full financial transparency.
-5. **Dedicated Support** – Personal dispatcher available 24/7, real-time updates and problem solving.
-6. **CDL Driver Recruitment** – Help find and recruit experienced CDL drivers to expand fleets.
-7. **Factoring Setup** – Complete factoring service setup to improve cash flow, get paid faster.
-8. **Insurance Setup** – Full assistance with commercial truck insurance requirements.
-
-## Equipment Types Dispatched
-Dry Van, Reefer, Flatbed, Step Deck, Power Only, Hotshot
-
-## Pricing
-- Dispatch fee: 6% of gross load revenue (percentage-based, no hidden fees)
-- Example: $7,000 gross load → $420 dispatch fee → ~$4,480 net after fuel (~$2,100) and dispatch fee
-
-## How It Works
-1. Submit your MC Number and basic info
-2. Get assigned a dedicated dispatcher
-3. Dispatcher secures profitable loads
-4. You drive and get paid — they handle negotiations, paperwork, payments
-
-## FAQ Answers
-- **New carriers**: Yes, they help new trucking companies with fresh MC authority — first load within 48 hours
-- **Onboarding**: Quick setup, start hauling within 48 hours
-- **Revenue improvement**: Drivers average 15–25% higher revenue per mile vs self-dispatching
-- **Dedicated dispatchers**: Yes, every driver gets a personal dispatcher who knows their lanes and preferences
-
-## Your Tone
-- Friendly, professional, and helpful
-- Speak like a knowledgeable trucking industry insider
-- Keep answers concise but informative
-- Always encourage the user to get started or contact First Bridge if they're ready
-- Never make up services or prices not listed above
-- If asked something you don't know, direct them to info@firstbridgedispatch.com`
-
 const suggestedQuestions = [
   "What services do you offer?",
   "How much do you charge?",
@@ -88,19 +41,16 @@ export default function FirstBridgeChatbot() {
     setLoading(true)
 
     try {
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 1000,
-          system: SYSTEM_PROMPT,
           messages: newMessages.map((m) => ({ role: m.role, content: m.content })),
         }),
       })
 
       const data = await response.json()
-      const reply = data.content?.[0]?.text || "Sorry, I couldn't get a response. Please try again or email info@firstbridgedispatch.com"
+      const reply = data.content || "Sorry, I couldn't get a response. Please try again or email info@firstbridgedispatch.com"
       setMessages([...newMessages, { role: "assistant", content: reply }])
     } catch (err) {
       setMessages([...newMessages, {
@@ -372,10 +322,8 @@ export default function FirstBridgeChatbot() {
       `}</style>
 
       <div className="fb-chat-root">
-        {/* Chat Window */}
         {open && (
           <div className="fb-window">
-            {/* Header */}
             <div className="fb-header">
               <div className="fb-avatar">🚛</div>
               <div className="fb-header-text">
@@ -389,7 +337,6 @@ export default function FirstBridgeChatbot() {
               </button>
             </div>
 
-            {/* Messages */}
             <div className="fb-messages">
               {messages.map((msg, i) => (
                 <div key={i} className={`fb-msg ${msg.role}`}>
@@ -406,7 +353,6 @@ export default function FirstBridgeChatbot() {
               <div ref={bottomRef} />
             </div>
 
-            {/* Suggested Questions */}
             {showSuggestions && (
               <div className="fb-suggestions">
                 {suggestedQuestions.map((q) => (
@@ -417,7 +363,6 @@ export default function FirstBridgeChatbot() {
               </div>
             )}
 
-            {/* Input */}
             <div className="fb-input-row">
               <textarea
                 ref={inputRef}
@@ -447,7 +392,6 @@ export default function FirstBridgeChatbot() {
           </div>
         )}
 
-        {/* Floating Button */}
         <button
           className="fb-bubble"
           onClick={() => setOpen((v) => !v)}
