@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono ,Orbitron,Rajdhani} from "next/font/google";
+import FirstBridgeChatbot from "@/component/FirstBridgeChatbot";
 import "./globals.css";
 
 const orbitron = Orbitron({
@@ -25,7 +26,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 
         </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">{children}
+      <FirstBridgeChatbot /> </body>
     </html>
   );
 }
