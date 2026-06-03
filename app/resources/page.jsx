@@ -605,27 +605,28 @@ max-h-[400px] overflow-y-auto z-50'>
                     {/* Links  */}
                     <div className='mt-6 flex gap-3 flex-wrap'>
                         <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>A</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>B</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>C</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>D</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>E</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>F</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>H</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>I</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>L</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>M</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>O</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>P</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>R</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>S</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>T</Link>
-                        <Link href={'/resources/#gloss-a'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>U</Link>
+                        <Link href={'/resources/#gloss-b'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>B</Link>
+                        <Link href={'/resources/#gloss-c'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>C</Link>
+                        <Link href={'/resources/#gloss-d'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>D</Link>
+                        <Link href={'/resources/#gloss-e'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>E</Link>
+                        <Link href={'/resources/#gloss-f'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>F</Link>
+                        <Link href={'/resources/#gloss-h'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>H</Link>
+                        <Link href={'/resources/#gloss-i'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>I</Link>
+                        <Link href={'/resources/#gloss-l'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>L</Link>
+                        <Link href={'/resources/#gloss-m'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>M</Link>
+                        <Link href={'/resources/#gloss-o'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>O</Link>
+                        <Link href={'/resources/#gloss-p'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>P</Link>
+                        <Link href={'/resources/#gloss-r'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>R</Link>
+                        <Link href={'/resources/#gloss-s'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>S</Link>
+                        <Link href={'/resources/#gloss-t'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>T</Link>
+                        <Link href={'/resources/#gloss-u'} className=' bg-white font-bold font-[Orbitron] rounded  py-1 px-3 text-[var(--secondary-color)] border-3 border-gray-300'>U</Link>
 
 
                     </div>
 
                     {/* Link Section  */}
-                    <div>
+            
+                    <div id='gloss-a'>
                         <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>A</div>
                         <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
                             {/* Card  */}
@@ -640,8 +641,8 @@ max-h-[400px] overflow-y-auto z-50'>
                             </div>
                         </div>
                     </div>
-                       {/* Link Section  */}
-                       <div>
+                    {/* Link Section  */}
+                    <div id='gloss-b'>
                         <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>B</div>
                         <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
                             {/* Card  */}
@@ -654,18 +655,311 @@ max-h-[400px] overflow-y-auto z-50'>
                                 <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>BOC-3</h4>
                                 <p className='font-light'>A federal filing that designates a process agent in each state where you operate. Required by FMCSA before your authority activates. Usually filed by your BOC-3 service provider for ~$30.</p>
                             </div>
-                               {/* Card  */}
-                               <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
-                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Authority (MC Authority)</h4>
-                                <p className='font-light'>The FMCSA-issued operating authority that legally allows a carrier to transport freight for hire in interstate commerce. Required before booking any brokered load.</p>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Break-Even Rate</h4>
+                                <p className='font-light'>The minimum rate per mile you must charge to cover all operating costs with zero profit. Know this number before accepting any load — charging below it guarantees a loss.</p>
                             </div>
-                               {/* Card  */}
-                               <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
-                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Authority (MC Authority)</h4>
-                                <p className='font-light'>The FMCSA-issued operating authority that legally allows a carrier to transport freight for hire in interstate commerce. Required before booking any brokered load.</p>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Broker</h4>
+                                <p className='font-light'>A middleman who connects shippers with carriers. Brokers find freight from shippers, post it on load boards or call carriers directly, and take a margin (typically 10–20%) between shipper pay and carrier pay.</p>
                             </div>
                         </div>
                     </div>
+                    {/* Link Section  */}
+                    <div id='gloss-c'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>C</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Cargo Insurance</h4>
+                                <p className='font-light'>Insurance that covers the freight you are hauling in case of damage or theft. FMCSA requires minimum cargo coverage — most brokers require $100,000. Some loads (high-value, temperature sensitive) require more.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>CDL (Commercial Driver's License)</h4>
+                                <p className='font-light'>The license required to operate a commercial motor vehicle over 26,001 lbs. Class A CDL is required for semi-trucks towing trailers over 10,000 lbs. Hotshot operators may not need a CDL if GVWR stays under 26,001 lbs.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Check Call</h4>
+                                <p className='font-light'>A status update call or message from carrier to broker confirming load pickup, current location, and ETA. Most brokers require at least one check call mid-transit. Dispatch services handle all check calls for you.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Cost Per Mile (CPM)</h4>
+                                <p className='font-light'>All operating expenses divided by total miles driven. The most important financial metric for owner operators. Knowing your CPM tells you the minimum rate you can profitably accept on any load.</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-d'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>D</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>DAT</h4>
+                                <p className='font-light'>The largest load board platform in trucking, with millions of loads posted daily. Offers market rate data (RateView) by lane so you know if a broker's rate is fair before calling.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Deadhead Miles</h4>
+                                <p className='font-light'>Miles driven without a paying load — either to a pickup location or repositioning after delivery. Deadhead still costs fuel and time. Industry target is under 10–15% of total miles.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Detention Payl</h4>
+                                <p className='font-light'>Extra compensation for time spent waiting at a shipper or receiver beyond the free time window (typically 2 hours). Standard detention rate is $25–$75/hour. Always include detention in your rate confirmation language.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Dispatcher</h4>
+                                <p className='font-light'>A professional who finds loads, negotiates rates, handles broker communication, and manages paperwork on behalf of carriers. A good dispatcher consistently beats self-dispatched rates and eliminates empty days.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Dry Van</h4>
+                                <p className='font-light'>The most common trailer type — an enclosed, non-temperature-controlled trailer (48' or 53') used for general freight. Highest load volume on any load board.</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-e'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>E</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>EIN (Employer Identification Number)</h4>
+                                <p className='font-light'>A federal tax ID number for your business, issued by the IRS. Required to open a business bank account, apply for authority, and file taxes as an owner operator.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>ELD (Electronic Logging Device)</h4>
+                                <p className='font-light'>A device that electronically records a driver's Hours of Service (HOS) data. Required by FMCSA for most commercial drivers. Replaces paper log books. Popular options include KeepTruckin (Motive), Samsara, and Rand McNally.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-f'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>F</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Factoring</h4>
+                                <p className='font-light'>A service where a factoring company pays you 90–97% of your invoice immediately after delivery, then collects full payment from the broker/shipper. Eliminates 30–60 day payment waits. Typical fee is 2–5% of invoice.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Flatbed</h4>
+                                <p className='font-light'>An open, flat trailer without sides or roof. Used for construction materials, steel, machinery, and oversized freight. Requires tarping and strapping skills. Pays 20–30% more than dry van on average.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>FMCSA</h4>
+                                <p className='font-light'>Federal Motor Carrier Safety Administration — the federal agency that regulates commercial motor vehicles, issues MC authority, enforces HOS rules, and maintains the safety fitness database (SAFER).</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Fuel Surcharge (FSC)</h4>
+                                <p className='font-light'>An additional charge added to freight rates to account for diesel price fluctuations. Usually calculated as a percentage of the linehaul rate or a per-mile amount tied to the DOE weekly diesel index.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-h'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>H</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>HOS (Hours of Service)</h4>
+                                <p className='font-light'>FMCSA regulations governing how many hours a commercial driver can drive and work per day and week. Key rules: 11 hours driving / 14-hour window / 30-min break after 8 hours / 70 hours in 8 days.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Hotshot</h4>
+                                <p className='font-light'>Expedited freight hauled with a heavy-duty pickup truck (F-450/F-550 class) and a gooseneck or flatbed trailer. No CDL required under 26,001 lbs GVWR. Popular for oilfield equipment, urgent parts, and LTL oversized cargo.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-i'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>I</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>IFTA (International Fuel Tax Agreement)</h4>
+                                <p className='font-light'>A tax agreement among US states and Canadian provinces that simplifies fuel tax reporting for interstate carriers. You report total miles and fuel purchased by state each quarter; net tax owed or refunded is calculated automatically.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>IRP (International Registration Plan)</h4>
+                                <p className='font-light'>A multi-state vehicle registration program that apportions truck registration fees based on the percentage of miles driven in each state. Required for vehicles operating in multiple states over 26,001 lbs.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-l'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>L</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Lane</h4>
+                                <p className='font-light'>A defined route between two geographic areas (e.g., "Chicago to Dallas" or "Atlanta to Los Angeles"). Some lanes pay better than others due to supply/demand imbalances, seasonal freight patterns, or backhaul scarcity.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Load Board</h4>
+                                <p className='font-light'>An online marketplace where freight brokers post available loads and carriers search for them. Major platforms include DAT, Truckstop.com, and 123Loadboard. Essential tools for finding spot market freight.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Lumper</h4>
+                                <p className='font-light'>A third-party worker hired to unload freight at a receiver's dock. Many shippers and receivers require lumpers. The lumper fee is often covered by the broker — confirm before accepting the load.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-m'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>M</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>MC Number (Motor Carrier Number)</h4>
+                                <p className='font-light'>The unique operating authority number issued by FMCSA to licensed carriers. Required to haul freight for brokers. Takes 20–25 business days to activate after filing. Cannot book brokered loads without it.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-o'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>O</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Owner Operator</h4>
+                                <p className='font-light'>A truck driver who owns their own equipment and operates as an independent carrier. Can be leased to a larger carrier or operate under their own authority. Higher income potential than company driving, with more responsibility.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Oversize / Overweight (OS/OW)</h4>
+                                <p className='font-light'>Loads that exceed standard legal dimensions or weight limits and require special permits, escort vehicles, or travel time restrictions. Pays significantly more than standard loads but adds complexity and cost.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+               
+                    {/* Link Section  */}
+                    <div id='gloss-p'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>P</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Power Only</h4>
+                                <p className='font-light'>A freight arrangement where the carrier provides only the truck (tractor) and the shipper or broker provides the trailer. Common with drop-and-hook freight. Eliminates loading/unloading waits.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>POD (Proof of Delivery)</h4>
+                                <p className='font-light'>A signed document confirming freight was delivered in good condition. Required by most brokers to release payment. Always get a clean, signed POD at delivery — it protects you against false damage claims.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-r'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>R</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Rate Confirmation</h4>
+                                <p className='font-light'>A written document from the broker confirming load details, rate, pickup/delivery locations, and payment terms. Always get a signed rate confirmation before dispatching on any load. It is your contract.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Rate Per Mile (RPM)</h4>
+                                <p className='font-light'>Total freight payment divided by loaded miles. The key metric for comparing load profitability across different runs. Always compare RPM to your cost per mile — not just the gross rate.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Reefer (Refrigerated Trailer)</h4>
+                                <p className='font-light'>A temperature-controlled trailer used for perishable food, pharmaceuticals, and other temperature-sensitive cargo. Requires a refrigeration unit (Thermo King or Carrier). Pays 15–30% more than dry van.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-s'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>S</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Safety Score (CSA Score)</h4>
+                                <p className='font-light'>FMCSA's Compliance, Safety, Accountability scoring system that rates carriers on violations, accidents, and inspections. High scores can prevent brokers from booking you. Keep violations minimal and dispute errors promptly.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Spot Rate</h4>
+                                <p className='font-light'>The current market rate for a one-time load, as opposed to a contracted rate. Spot rates fluctuate daily based on supply/demand. In high-demand seasons, spot rates can exceed contract rates significantly.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Step Deck (Drop Deck)</h4>
+                                <p className='font-light'>A flatbed trailer with a lower deck section that allows taller freight to be hauled while staying within legal height limits. Pays more than standard flatbed due to versatility with oversized cargo.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-t'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>T</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>TONU (Truck Order Not Used)</h4>
+                                <p className='font-light'>A fee paid to the carrier when a load is cancelled after the carrier has already been dispatched. Typically $150–$300. Always include TONU language in your rate confirmation to protect yourself from broker cancellations.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>Tarp Pay</h4>
+                                <p className='font-light'>Additional compensation for flatbed loads that require the freight to be covered with tarps. Standard tarp pay is $50–$150 per tarp depending on size and difficulty. Always negotiate tarp pay upfront.</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    {/* Link Section  */}
+                    <div id='gloss-u'>
+                        <div className='text-3xl mt-6 text-[var(--primary-color)] font-bold p-2 border-b-2 border-[var(--primary-color] w-min'>U</div>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-3'>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>UCR (Unified Carrier Registration)</h4>
+                                <p className='font-light'>An annual federal registration and fee program for interstate carriers. Fee is based on fleet size — starts at $69/year for carriers with 1–2 trucks. Must be renewed each year before January 1.</p>
+                            </div>
+                            {/* Card  */}
+                            <div className='p-4 rounded-xl border border-gray-300 bg-white hover:border-[var(--primary-color)] transition-all'>
+                                <h4 className='font-[Orbitron] font-bold text-[var(--light-color)]'>USDOT Number</h4>
+                                <p className='font-light'>A unique identifier assigned to commercial vehicles by the US DOT for safety monitoring. Required for any vehicle over 10,001 lbs in interstate commerce. Typically obtained alongside your MC number.</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
 
                 </div>
             </div>
