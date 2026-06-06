@@ -1,63 +1,69 @@
-// app/api/chat/route.js
-import { GoogleGenerativeAI } from "@google/generative-ai"
+import { NextResponse } from "next/server";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GENERATIVE_AI_API_KEY)
-
-const SYSTEM_PROMPT = `You are the AI assistant for First Bridge Dispatch Services — a professional truck dispatch company serving owner-operators and fleets across all 48 states of the USA.
-
-Your job is to help truckers, owner-operators, and fleet owners learn about First Bridge's services and guide them toward getting started.
-
-## About First Bridge
-- Available 24/7, serves all 48 continental states
-- Contact: info@firstbridgedispatch.com
-- 500+ active drivers, 98% customer satisfaction, $2.5M+ revenue/month
-
-## Services
-1. Load Finding – Premium load boards, best rate negotiation
-2. Route Planning – Maximize revenue per mile, reduce deadhead miles
-3. Broker Relations – Handle all broker/shipper communication
-4. Billing & Invoicing – Accurate invoicing, timely payments
-5. Dedicated Support – Personal dispatcher available 24/7
-6. CDL Driver Recruitment – Help find/recruit experienced CDL drivers
-7. Factoring Setup – Improve cash flow, get paid faster
-8. Insurance Setup – Commercial truck insurance assistance
-
-## Equipment Types
-Dry Van, Reefer, Flatbed, Step Deck, Power Only, Hotshot
-
-## Pricing
-- 6% of gross load revenue, no hidden fees
-- Example: $7,000 load → $420 fee → ~$4,480 net after fuel
-
-## Key Facts
-- New carriers welcome, first load within 48 hours
-- Drivers average 15–25% higher revenue vs self-dispatching
-- Every driver gets a dedicated personal dispatcher
-
-Keep answers concise, friendly and professional. Direct to info@firstbridgedispatch.com for anything you can't answer.`
+const SYSTEM_INSTRUCTION = `
+You are the First Bridge AI Assistant, a helpful chatbot for First Bridge Dispatch Services.
+Answer queries regarding truck dispatching politely, accurately, and shortly.
+Services: Freight dispatching, load matching, rate negotiation, paperwork, billing, 24/7 support.
+Pricing: Around 5% to 8% per load depending on equipment.
+Equipment: Dry Vans, Reefers, Flatbeds, Step Decks, Power Only, Hotshots.
+Contact email: info@firstbridgedispatch.com.
+`;
 
 export async function POST(req) {
   try {
-    const { messages } = await req.json()
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json(
+        { content: "Backend Error: GEMINI_API_KEY missing in .env.local file." },
+        { status: 500 }
+      );
+    }
 
+    const body = await req.json();
+    const { messages } = body;
+
+    if (!messages || messages.length === 0) {
+      return NextResponse.json({ content: "No messages payload received." }, { status: 400 });
+    }
+
+    // --- FIX START ---
+    // Hum sirf wahi messages history mein rakhenge jo welcome message ke BAAD aaye hain.
+    // Isse Gemini ko pehla message hamesha 'user' ka milega.
+    const actualHistory = messages.filter((msg, index) => {
+      // Pehla message agar assistant ka hai toh usko skip karo
+      if (index === 0 && msg.role === "assistant") return false;
+      return true;
+    });
+
+    // Akhri user message jo abhi send hua hai usko alag nikalen
+    const latestMessage = actualHistory[actualHistory.length - 1].content;
+
+    // Baki bachi hui purani history ko format karein
+    const formattedHistory = actualHistory.slice(0, -1).map((msg) => ({
+      role: msg.role === "assistant" ? "model" : "user",
+      parts: [{ text: msg.content }],
+    }));
+    // --- FIX END ---
+
+    // Initialize Gemini
+    const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
-      systemInstruction: SYSTEM_PROMPT,
-    })
+      model: "gemini-3.5-flash", 
+      systemInstruction: SYSTEM_INSTRUCTION,
+    });
 
-    const history = messages.slice(0, -1).map((m) => ({
-      role: m.role === "assistant" ? "model" : "user",
-      parts: [{ text: m.content }],
-    }))
+    const chat = model.startChat({ history: formattedHistory });
+    const result = await chat.sendMessage(latestMessage);
+    const aiText = result.response.text();
 
-    const chat = model.startChat({ history })
-    const lastMessage = messages[messages.length - 1].content
-    const result = await chat.sendMessage(lastMessage)
-    const text = result.response.text()
+    return NextResponse.json({ content: aiText });
 
-    return Response.json({ content: text })
-  } catch (err) {
-    console.error(err)
-    return Response.json({ error: "Failed" }, { status: 500 })
+  } catch (error) {
+    console.error("Gemini Route Error:", error);
+    return NextResponse.json(
+      { content: `Google Gemini Error: ${error.message || error.toString()}` },
+      { status: 500 }
+    );
   }
 }

@@ -12,6 +12,7 @@ import Weekly from "@/component/Weekly";
 import Equipment from "@/component/Equipment";
 import Testimonial from "@/component/Testimonial";
 import Contact from "@/component/Contact";
+import Chatbot from "@/component/Chatbot";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
    <Whysus/>
    <Faq/>
    <Contact/>
+   <Chatbot/>
   
    <Footer/>
   
