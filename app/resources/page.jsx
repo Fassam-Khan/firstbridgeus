@@ -3,7 +3,7 @@ import Header from '@/component/Header'
 import { getBlogs } from "@/lib/getBlogs"
 import Image from 'next/image'
 import { GraduationCap, BadgeQuestionMark, MapIcon } from 'lucide-react'
-import Faq from '@/component/Faq'
+import {Accordionpage} from '@/component/ResourceFaq'
 
 
 import {
@@ -967,7 +967,15 @@ max-h-[400px] overflow-y-auto z-50'>
             </div>
 
             {/* Faq Section  */}
-            <Faq />
+            <div className='md:w-[1100px] m-auto py-10'>
+                {/* Heading  */}
+                <h2 className='md:text-4xl font-extrabold'>MASTER FAQ - OWNER OPERATOR QUESTIONS</h2>
+                <p className='font-light mt-4'>The most common questions from owner operators and new carriers — all in one place</p>
+            <Accordionpage className='wrapper'/>
+
+            </div>
+
+
 
 
             {/* Footer */}
