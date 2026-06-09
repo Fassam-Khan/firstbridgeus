@@ -967,7 +967,7 @@ max-h-[400px] overflow-y-auto z-50'>
             </div>
 
             {/* Faq Section  */}
-            <div className='md:w-[1100px] m-auto py-10 wrapper'>
+            <div className='md:w-[1100px] m-auto py-10 wrapper px-2'>
                 {/* Heading  */}
                 <h2 className='md:text-4xl font-extrabold'>MASTER FAQ - OWNER OPERATOR QUESTIONS</h2>
                 <p className='font-light mt-4'>The most common questions from owner operators and new carriers — all in one place</p>

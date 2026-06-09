@@ -180,16 +180,16 @@ export function Accordionpage() {
                     <AccordionItem value="shipping" className='bg-white px-4 py-1 rounded border border-gray-300  w-full h-auto hover:bg-[#FFDCD0] cursor-pointer transition-all'>
                         <AccordionTrigger className="font-[Orbitron] text-[#004e89] font-bold  text-lg "><h2>How much does commerical trucking insurance cost?</h2></AccordionTrigger>
                         <AccordionContent className="text-[16px] h-auto">
-                        For new authorities, expect $8,000–$18,000 per year ($667–$1,500/month) for primary liability, cargo, and physical damage combined. New authorities typically pay the most — costs decrease as your safety record builds. Required minimums: $750,000 liability (most brokers require $1M), $100,000 cargo. Get quotes from at least 3–5 providers — rates vary significantly between carriers.
-</AccordionContent>
+                            For new authorities, expect $8,000–$18,000 per year ($667–$1,500/month) for primary liability, cargo, and physical damage combined. New authorities typically pay the most — costs decrease as your safety record builds. Required minimums: $750,000 liability (most brokers require $1M), $100,000 cargo. Get quotes from at least 3–5 providers — rates vary significantly between carriers.
+                        </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="gfd" className='bg-white px-4 py-1 rounded border border-gray-300  w-full h-auto hover:bg-[#FFDCD0] cursor-pointer transition-all'>
                         <AccordionTrigger className="font-[Orbitron] text-[#004e89] font-bold  text-lg "><h2>Should I buy or lease a truck to start?</h2></AccordionTrigger>
                         <AccordionContent className="text-[16px] h-auto">
-                        For most new owner operators, financing a used truck with 20–30% down is the most practical starting point. Buying cash eliminates payments but ties up capital. Leasing (rent-to-own from carrier) is easy to start but expensive long-term. Used trucks in the $30,000–$80,000 range with 400,000–700,000 miles offer the best cost/value balance for new carriers. Avoid trucks with deferred maintenance — repair costs will wipe out your margins.
-</AccordionContent>
+                            For most new owner operators, financing a used truck with 20–30% down is the most practical starting point. Buying cash eliminates payments but ties up capital. Leasing (rent-to-own from carrier) is easy to start but expensive long-term. Used trucks in the $30,000–$80,000 range with 400,000–700,000 miles offer the best cost/value balance for new carriers. Avoid trucks with deferred maintenance — repair costs will wipe out your margins.
+                        </AccordionContent>
                     </AccordionItem>
-              
+
 
 
 
