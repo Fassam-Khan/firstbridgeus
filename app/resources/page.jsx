@@ -14,6 +14,7 @@ import {
 import BlogsPage from '@/component/GettAllBlog'
 import Link from 'next/link'
 import Footer from '@/component/Footer'
+import StateRegSection from '@/component/StateRegSection'
 const page = async () => {
 
     const blogs = await getBlogs();
@@ -969,10 +970,18 @@ max-h-[400px] overflow-y-auto z-50'>
             {/* Faq Section  */}
             <div className='md:w-[1100px] m-auto py-10 wrapper px-2'>
                 {/* Heading  */}
-                <h2 className='md:text-4xl font-extrabold'>MASTER FAQ - OWNER OPERATOR QUESTIONS</h2>
+                <h2 className='md:text-4xl font-extrabold text-xl'>MASTER FAQ - OWNER OPERATOR QUESTIONS</h2>
                 <p className='font-light mt-4'>The most common questions from owner operators and new carriers — all in one place</p>
             <Accordionpage className=''/>
 
+            </div>
+
+
+            {/* State Reg Section  */}
+            <div>
+                <div className="wrapper">
+                    <StateRegSection/>
+                </div>
             </div>
 
 
