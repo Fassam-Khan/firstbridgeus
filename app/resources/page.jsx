@@ -44,6 +44,7 @@ const page = async () => {
 
                                 <CarouselItem className="basis-[60%]">
                                     {/* Card  */}
+                                <Link href={'/resources/#guides'}>
                                     <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                         <div className='flex gap-2 items-center  '>
                                             <Image src={'/book.svg'} width={24} height={24} alt='book' className='text-[var(--primary-color)]' />
@@ -54,12 +55,13 @@ const page = async () => {
                                         <span className='bg-[var(--primary-color)] !p-2 rounded-full w-5 h-5 flex justify-center items-center text-white'>10</span>
                                         <div className='h-1 bg-[var(--primary-color)] w-full absolute -bottom-5'></div>
                                     </div>
+                                    </Link>
 
 
                                 </CarouselItem>
                                 <CarouselItem className="basis-[60%]">
                                     {/* Card  */}
-                                    <a href="">
+                                    <Link href={'/resources/#market'}>
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
                                                 <Image src={'/market.svg'} width={24} height={24} alt='market' />
@@ -70,11 +72,11 @@ const page = async () => {
 
 
                                         </div>
-                                    </a>
+                                    </Link>
                                 </CarouselItem>
                                 <CarouselItem className="basis-[60%]">
                                     {/* Card  */}
-                                    <a href="">
+                                    <Link  href={'/resources/#glossary'}>
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
                                                 <GraduationCap className='text-[var(--primary-color)]' />
@@ -84,12 +86,12 @@ const page = async () => {
 
 
                                         </div>
-                                    </a>
+                                    </Link>
 
                                 </CarouselItem>
                                 <CarouselItem className="basis-[60%]">
                                     {/* Card  */}
-                                    <a href="">
+                                    <Link href={'/resources/#faq'}>
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
                                                 <BadgeQuestionMark className='text-[var(--primary-color)]' />
@@ -99,12 +101,12 @@ const page = async () => {
 
 
                                         </div>
-                                    </a>
+                                    </Link>
 
                                 </CarouselItem>
                                 <CarouselItem className="basis-[60%]">
                                     {/* Card  */}
-                                    <a href="">
+                                    <Link href={'/resources/#state'}>
                                         <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                             <div className='flex gap-2 items-center  '>
                                                 <MapIcon className='text-[var(--primary-color)]' />
@@ -114,7 +116,7 @@ const page = async () => {
 
 
                                         </div>
-                                    </a>
+                                    </Link>
                                 </CarouselItem>
 
 
@@ -268,7 +270,7 @@ max-h-[400px] overflow-y-auto z-50'>
                                 </div>
                             </div>
                             {/* Card  */}
-                            <a href="">
+                            <Link href={'/resources/#market'}>
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
                                         <Image src={'/market.svg'} width={30} height={30} alt='market' />
@@ -278,9 +280,9 @@ max-h-[400px] overflow-y-auto z-50'>
 
 
                                 </div>
-                            </a>
+                            </Link>
                             {/* Card  */}
-                            <a href="">
+                            <Link href={'/resources/#glossary'}>
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
                                         <GraduationCap className='text-[var(--primary-color)] w-[30px] h-[30px]' />
@@ -291,9 +293,9 @@ max-h-[400px] overflow-y-auto z-50'>
 
 
                                 </div>
-                            </a>
+                            </Link>
                             {/* Card  */}
-                            <a href="">
+                            <Link href={'/resources/#faq'}>
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
                                         <BadgeQuestionMark className='text-[var(--primary-color)] w-[30px] h-[30px]' />
@@ -303,9 +305,9 @@ max-h-[400px] overflow-y-auto z-50'>
 
 
                                 </div>
-                            </a>
+                            </Link>
                             {/* Card  */}
-                            <a href="">
+                            <Link href={'/resources/#state'}>
                                 <div className='flex gap-4  md:w-[190px] relative h-full group cursor-pointer'>
                                     <div className='flex gap-2 items-center  '>
                                         <MapIcon className='text-[var(--primary-color)] w-[30px] h-[30px]' />
@@ -316,7 +318,7 @@ max-h-[400px] overflow-y-auto z-50'>
 
 
                                 </div>
-                            </a>
+                            </Link>
 
                         </div>
 
@@ -429,7 +431,7 @@ max-h-[400px] overflow-y-auto z-50'>
             </div>
 
             {/* Market Section  */}
-            <div className='bg-[var(--secondary-color)] market py-6 before:content[""]  before:bg-[repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255, 107, 53, 0.03) 40px, rgba(255, 107, 53, 0.03) 80px)]'>
+            <div id='market' className='bg-[var(--secondary-color)] market py-6 before:content[""]  before:bg-[repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255, 107, 53, 0.03) 40px, rgba(255, 107, 53, 0.03) 80px)]'>
                 <div className="wrapper md:w-[1100px] m-auto ">
                     {/* Heading  */}
                     <div className='flex flex-col gap-2 text-white'>
@@ -596,7 +598,7 @@ max-h-[400px] overflow-y-auto z-50'>
             </div>
 
             {/* Glossary Section  */}
-            <div className='bg-[#F7F9FB]'>
+            <div id='glossary' className='bg-[#F7F9FB]'>
                 <div className='wrapper md:w-[1100px] m-auto'>
 
                     {/* Heading  */}
@@ -978,7 +980,7 @@ max-h-[400px] overflow-y-auto z-50'>
 
 
             {/* State Reg Section  */}
-            <div>
+            <div id='state'>
                 <div className="wrapper">
                     <StateRegSection/>
                 </div>
