@@ -46,12 +46,12 @@ const Footer = () => {
                         <h4 className='font-[Orbitron] text-xl text-[#ffd23f] font-semibold'>Free Tools </h4>
                         <ul className='!mt-3 flex flex-col gap-2'>
                         <Link href={'/freetools'}><li className='hover:text-[var(--primary-color)]'>All Free Calculators</li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Diesel Fuel Prices</li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Rate Per Mile</li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Load Profit</li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Fuel Cost </li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Brake Even Rate</li></Link>
-                        <Link href={'/'}><li className='hover:text-[var(--primary-color)]'>Cost Per Mile</li></Link>
+                        <Link href={'/freetools/fuel-cost'}><li className='hover:text-[var(--primary-color)]'>Diesel Fuel Prices</li></Link>
+                        <Link href={'/freetools/rate-calculator'}><li className='hover:text-[var(--primary-color)]'>Rate Per Mile</li></Link>
+                        <Link href={'/freetools/load-profit-calculator'}><li className='hover:text-[var(--primary-color)]'>Load Profit</li></Link>
+                        <Link href={'/freetools/fuel-cost'}><li className='hover:text-[var(--primary-color)]'>Fuel Cost </li></Link>
+                        <Link href={'/freetools/break-even'}><li className='hover:text-[var(--primary-color)]'>Brake Even Rate</li></Link>
+                        <Link href={'/freetools/cost-per-mile'}><li className='hover:text-[var(--primary-color)]'>Cost Per Mile</li></Link>
                         </ul>
                     </div>
 
